@@ -262,6 +262,7 @@ function Pricing() {
   const features = [
     "Sessione di 1 ora",
     "A Milano e zone limitrofe",
+    "Disponibilità 7 giorni su 7",
     "Programma costruito sulla tua quotidianità",
     "Materiali e suggerimenti pratici dopo la sessione",
   ];
