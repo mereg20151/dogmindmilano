@@ -263,60 +263,48 @@ function Method() {
 }
 
 function Pricing() {
-  const plans = [
-    { name: "Lezione singola", price: "60", unit: "/ora", desc: "Una sessione mirata per valutazione o gestione di un punto specifico.", features: ["Sessione 1h", "A Milano e zone limitrofe", "Materiali e suggerimenti pratici"] },
-    { name: "Pacchetto 5 lezioni", price: "270", unit: "totali", desc: "Il percorso più richiesto: tempo sufficiente per costruire abitudini reali.", features: ["5 sessioni 1h", "Programma personalizzato", "Supporto WhatsApp tra le sessioni", "Verifica avanzamento"], featured: true },
-    { name: "Pacchetto 10 lezioni", price: "500", unit: "totali", desc: "Per chi parte da zero o vuole consolidare nel tempo, su tutti i fronti.", features: ["10 sessioni 1h", "Programma evolutivo", "Supporto WhatsApp continuativo", "Follow-up finale"] },
+  const features = [
+    "Sessione di 1 ora",
+    "A Milano e zone limitrofe",
+    "Programma costruito sulla tua quotidianità",
+    "Materiali e suggerimenti pratici dopo la sessione",
   ];
   return (
     <section id="servizi" className="py-24 md:py-36 bg-surface">
       <div className="container-px max-w-7xl mx-auto">
         <SectionHeader
           kicker="Servizi e prezzi"
-          title="Percorsi pratici personalizzati."
-          sub="Tre formati pensati per adattarsi al momento in cui sei e a ciò che ti serve davvero."
+          title="Un percorso pratico personalizzato."
+          sub="Una formula semplice e trasparente. Costruiamo insieme il numero di sessioni adatto al tuo cane."
         />
-        <div className="grid lg:grid-cols-3 gap-5">
-          {plans.map((p) => (
-            <div
-              key={p.name}
-              className={`relative rounded-2xl p-8 md:p-10 border transition-all duration-500 hover:-translate-y-1 ${
-                p.featured
-                  ? "bg-background border-accent shadow-2xl shadow-accent/10"
-                  : "bg-background border-border"
-              }`}
-            >
-              {p.featured && (
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-accent text-accent-foreground text-[10px] uppercase tracking-[0.2em] px-3 py-1.5 rounded-full">
-                  Più richiesto
-                </div>
-              )}
-              <h3 className="font-display text-2xl mb-2">{p.name}</h3>
-              <p className="text-sm text-muted-foreground mb-8 min-h-[44px]">{p.desc}</p>
-              <div className="flex items-baseline gap-2 mb-8">
-                <span className="font-display text-6xl">€{p.price}</span>
-                <span className="text-sm text-muted-foreground">{p.unit}</span>
-              </div>
-              <ul className="space-y-3 mb-10">
-                {p.features.map((f) => (
-                  <li key={f} className="flex items-start gap-3 text-sm text-muted-foreground">
-                    <Check className="h-4 w-4 text-accent shrink-0 mt-0.5" />
-                    <span>{f}</span>
-                  </li>
-                ))}
-              </ul>
-              <a
-                href="#contatto"
-                className={`block text-center w-full py-3 rounded-md text-sm font-medium transition-all ${
-                  p.featured
-                    ? "bg-accent text-accent-foreground hover:bg-accent/90"
-                    : "bg-primary text-primary-foreground hover:bg-primary/90"
-                }`}
-              >
-                Richiedi informazioni
-              </a>
+        <div className="max-w-2xl mx-auto">
+          <div className="relative rounded-2xl p-10 md:p-14 border border-accent bg-background shadow-2xl shadow-accent/10 transition-all duration-500 hover:-translate-y-1">
+            <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-accent text-accent-foreground text-[10px] uppercase tracking-[0.2em] px-3 py-1.5 rounded-full">
+              Lezione singola
             </div>
-          ))}
+            <h3 className="font-display text-3xl mb-3">Sessione di educazione</h3>
+            <p className="text-sm text-muted-foreground mb-8">
+              Una sessione mirata, costruita sulla tua situazione reale.
+            </p>
+            <div className="flex items-baseline gap-2 mb-10">
+              <span className="font-display text-7xl">€60</span>
+              <span className="text-base text-muted-foreground">/ora</span>
+            </div>
+            <ul className="space-y-3 mb-10">
+              {features.map((f) => (
+                <li key={f} className="flex items-start gap-3 text-sm text-muted-foreground">
+                  <Check className="h-4 w-4 text-accent shrink-0 mt-0.5" />
+                  <span>{f}</span>
+                </li>
+              ))}
+            </ul>
+            <a
+              href="#contatto"
+              className="block text-center w-full py-3.5 rounded-md text-sm font-medium bg-accent text-accent-foreground hover:bg-accent/90 transition-all"
+            >
+              Richiedi una consulenza
+            </a>
+          </div>
         </div>
       </div>
     </section>
