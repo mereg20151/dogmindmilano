@@ -217,9 +217,7 @@ function About() {
               che mi permette di capire fino in fondo i cani che vedo lavorando con i miei clienti.
             </p>
             <p>
-              Il mio approccio è semplice: niente formule magiche, niente estetica da "alpha trainer".
-              Lavoro su ciò che serve davvero — la passeggiata di tutti i giorni, la gestione in casa,
-              la relazione che rende possibile tutto il resto.
+              Il mio approccio è semplice: niente scorciatoie e niente spettacolarizzazione. Mi concentro su ciò che conta davvero: la vita quotidiana con il cane, dentro e fuori casa.
             </p>
           </div>
           <div className="mt-10 flex flex-wrap gap-3">
