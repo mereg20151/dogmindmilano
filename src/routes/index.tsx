@@ -380,6 +380,7 @@ function FinalCta() {
   return (
     <section className="py-24 md:py-36 bg-surface">
       <div className="container-px max-w-4xl mx-auto text-center">
+        <img src={logoImg} alt="Logo Dog Mind Milano" className="h-20 w-auto mx-auto mb-8 opacity-90" />
         <h2 className="text-4xl md:text-6xl lg:text-7xl text-balance leading-[1.05] mb-6">
           Inizia a vivere meglio <span className="italic text-accent">con il tuo cane</span>
         </h2>
@@ -403,7 +404,10 @@ function Footer() {
     <footer className="border-t border-border py-12 container-px max-w-7xl mx-auto">
       <div className="grid md:grid-cols-3 gap-10 mb-10">
         <div>
-          <div className="font-display text-xl mb-3 uppercase">DOG MIND MILANO</div>
+          <div className="flex items-center gap-3 mb-3">
+            <img src={logoImg} alt="Logo Dog Mind Milano" className="h-10 w-auto" />
+            <div className="font-display text-xl uppercase">DOG MIND MILANO</div>
+          </div>
           <p className="text-sm text-muted-foreground">Educatore cinofilo in formazione · Percorso ENCI.</p>
           <div className="flex items-center gap-2 text-sm text-muted-foreground mt-4">
             <MapPin className="h-4 w-4" /> Milano, Italia
