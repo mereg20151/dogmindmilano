@@ -279,8 +279,11 @@ function Pricing() {
               Lezione singola
             </div>
             <h3 className="font-display text-3xl mb-3">Sessione di educazione</h3>
-            <p className="text-sm text-muted-foreground mb-8">
+            <p className="text-sm text-muted-foreground mb-3">
               Una sessione mirata, costruita sulla tua situazione reale.
+            </p>
+            <p className="text-sm text-foreground/90 mb-8">
+              Servizio a domicilio su Milano e dintorni, dal lunedì alla domenica.
             </p>
             <div className="flex items-baseline gap-2 mb-10">
               <span className="font-display text-7xl">€60</span>
