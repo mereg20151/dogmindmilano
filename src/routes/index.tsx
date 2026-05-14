@@ -323,6 +323,22 @@ function FormSection() {
         Lavoro principalmente su <span className="text-foreground">educazione di base e gestione quotidiana</span>.
         Per situazioni più complesse verrà prima valutato il caso.
       </div>
+      <div className="mb-8 flex flex-col sm:flex-row gap-3">
+        <a
+          href="https://wa.me/393318165762"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center justify-center gap-2 flex-1 border border-border rounded-md px-5 py-3.5 text-sm text-foreground hover:bg-surface transition-colors"
+        >
+          <MessageCircle className="h-4 w-4 text-accent" /> +39 331 8165762
+        </a>
+        <a
+          href="mailto:almasio.sam@gmail.com"
+          className="inline-flex items-center justify-center gap-2 flex-1 border border-border rounded-md px-5 py-3.5 text-sm text-foreground hover:bg-surface transition-colors"
+        >
+          <Mail className="h-4 w-4 text-accent" /> almasio.sam@gmail.com
+        </a>
+      </div>
       <MultiStepForm />
     </section>
   );
