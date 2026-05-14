@@ -101,7 +101,7 @@ function Hero() {
             Milano · Educazione cinofila
           </div>
           <h1 className="reveal reveal-delay-1 text-5xl md:text-7xl lg:text-8xl text-balance leading-[1.02] mb-6">
-            Educazione cinofila <span className="text-accent italic">a Milano</span>
+            Educazione cinofila <span className="text-accent italic">di base</span> a Milano
           </h1>
           <p className="reveal reveal-delay-2 text-lg md:text-xl text-muted-foreground max-w-xl text-pretty mb-3">
             Percorsi pratici per migliorare la vita quotidiana con il tuo cane.
