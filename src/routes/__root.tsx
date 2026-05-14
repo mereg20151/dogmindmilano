@@ -72,14 +72,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "DOGMIND MILANO" },
+      { name: "description", content: "Aiuto cani e persone a costruire una relazione più equilibrata attraverso un percorso di educazione cinofila a Milano." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "DOGMIND MILANO" },
+      { property: "og:description", content: "Aiuto cani e persone a costruire una relazione più equilibrata attraverso un percorso di educazione cinofila a Milano." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "DOGMIND MILANO" },
+      { name: "twitter:description", content: "Aiuto cani e persone a costruire una relazione più equilibrata attraverso un percorso di educazione cinofila a Milano." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/HgtnA3dyEBSPNebplz51hQewnhr2/social-images/social-1778773861488-Logo_Scudo_con_Duomo_e_Cane_Pastore.webp" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/HgtnA3dyEBSPNebplz51hQewnhr2/social-images/social-1778773861488-Logo_Scudo_con_Duomo_e_Cane_Pastore.webp" },
     ],
     links: [
       {
