@@ -317,7 +317,7 @@ function FormSection() {
       <SectionHeader
         kicker="Modulo di contatto"
         title="Iniziamo dal questionario."
-        sub="Un modo semplice per farmi capire la situazione e per arrivare già preparato alla nostra prima chiamata."
+        sub="Poche domande per inquadrare il tuo cane, le sue abitudini e gli obiettivi su cui vuoi lavorare."
       />
       <div className="mb-8 p-5 rounded-lg border border-border bg-surface text-sm text-muted-foreground leading-relaxed">
         Lavoro principalmente su <span className="text-foreground">educazione di base e gestione quotidiana</span>.
