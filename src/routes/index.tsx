@@ -8,6 +8,7 @@ import portraitImg from "@/assets/about-portrait.jpg";
 import action1 from "@/assets/action-1.jpg";
 import { MultiStepForm } from "@/components/MultiStepForm";
 import { StickyMobileCta } from "@/components/StickyMobileCta";
+import logoImg from "@/assets/logo-dog-mind-milano.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -60,7 +61,8 @@ function Header() {
   return (
     <header className="fixed top-0 inset-x-0 z-30 backdrop-blur-md bg-background/70 border-b border-border/50">
       <div className="container-px max-w-7xl mx-auto h-16 flex items-center justify-between">
-        <a href="#top" className="font-display text-xl tracking-tight uppercase">
+        <a href="#top" className="flex items-center gap-2 font-display text-xl tracking-tight uppercase">
+          <img src={logoImg} alt="Logo Dog Mind Milano" className="h-8 w-auto" />
           DOG MIND MILANO
         </a>
         <nav className="hidden md:flex items-center gap-8 text-sm text-muted-foreground">
