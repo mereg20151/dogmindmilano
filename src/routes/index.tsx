@@ -211,15 +211,13 @@ function About() {
           />
           <div className="space-y-5 font-sans text-base md:text-lg text-muted-foreground leading-relaxed text-pretty [&_p]:font-sans [&_span]:font-sans">
             <p>
-              Il mio approccio è semplice: niente scorciatoie e niente spettacolarizzazione. Mi concentro su ciò che conta davvero: la vita quotidiana con il cane, dentro e fuori casa.
+              La passione per i cani è il punto di partenza di tutto quello che faccio. Sto concludendo il percorso ENCI da educatore cinofilo, ma è il lavoro pratico di ogni giorno — sul campo, in strada, dentro casa — che mi forma davvero.
             </p>
             <p>
-              Non te lo presento come "il cane perfetto". È il cane su cui imparo, ogni giorno,
-              cosa significa costruire una relazione fatta di costanza, ascolto e gestione concreta. È quello
-              che mi permette di capire fino in fondo i cani che vedo lavorando con i miei clienti.
+              Convivo quotidianamente con un Belgian Malinois: una razza che non lascia spazio a improvvisazioni e che mi obbliga, ogni giorno, a mettere al centro la relazione, l'ascolto e la coerenza. È il cane su cui imparo, sbaglio e affino il mio modo di lavorare.
             </p>
             <p>
-              Il mio approccio è semplice: niente scorciatoie e niente spettacolarizzazione. Mi concentro su ciò che conta davvero: la vita quotidiana con il cane, dentro e fuori casa.
+              Il mio approccio è realistico e concreto: niente scorciatoie, niente spettacolarizzazione. Mi concentro su ciò che conta davvero — la vita quotidiana con il tuo cane — costruendo una gestione sostenibile, fatta di piccoli passi che restano nel tempo.
             </p>
           </div>
           <div className="mt-10 flex flex-wrap gap-3">
