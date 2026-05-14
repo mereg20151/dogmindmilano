@@ -207,7 +207,7 @@ function About() {
             kicker="Chi sono"
             title="Lavoro pratico, relazione vera, risultati nella vita di tutti i giorni."
           />
-          <div className="space-y-5 text-base md:text-lg text-muted-foreground leading-relaxed text-pretty">
+          <div className="space-y-5 font-sans text-base md:text-lg text-muted-foreground leading-relaxed text-pretty [&_p]:font-sans [&_span]:font-sans">
             <p>
               Il mio approccio è semplice: niente scorciatoie e niente spettacolarizzazione. Mi concentro su ciò che conta davvero: la vita quotidiana con il cane, dentro e fuori casa.
             </p>
