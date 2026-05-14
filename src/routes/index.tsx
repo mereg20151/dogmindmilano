@@ -394,9 +394,9 @@ function Footer() {
         <div>
           <div className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-4">Contatti</div>
           <ul className="space-y-3 text-sm">
+            <li><a href="https://wa.me/393318165762" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-foreground hover:text-accent transition-colors"><MessageCircle className="h-4 w-4" /> +39 331 8165762</a></li>
+            <li><a href="mailto:almasio.sam@gmail.com" className="inline-flex items-center gap-2 text-foreground hover:text-accent transition-colors"><Mail className="h-4 w-4" /> almasio.sam@gmail.com</a></li>
             <li><a href="#" className="inline-flex items-center gap-2 text-foreground hover:text-accent transition-colors"><Instagram className="h-4 w-4" /> Instagram</a></li>
-            <li><a href="#" className="inline-flex items-center gap-2 text-foreground hover:text-accent transition-colors"><MessageCircle className="h-4 w-4" /> WhatsApp&nbsp;</a></li>
-            <li><a href="#" className="inline-flex items-center gap-2 text-foreground hover:text-accent transition-colors"><Mail className="h-4 w-4" /> Email</a></li>
           </ul>
         </div>
         <div>
