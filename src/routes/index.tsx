@@ -61,7 +61,7 @@ function Header() {
     <header className="fixed top-0 inset-x-0 z-30 backdrop-blur-md bg-background/70 border-b border-border/50">
       <div className="container-px max-w-7xl mx-auto h-16 flex items-center justify-between">
         <a href="#top" className="font-display text-xl tracking-tight uppercase">
-          Dog Mind Milano
+          DOG MIND MILANO
         </a>
         <nav className="hidden md:flex items-center gap-8 text-sm text-muted-foreground">
           {nav.map((n) => (
@@ -401,7 +401,7 @@ function Footer() {
     <footer className="border-t border-border py-12 container-px max-w-7xl mx-auto">
       <div className="grid md:grid-cols-3 gap-10 mb-10">
         <div>
-          <div className="font-display text-xl mb-3 uppercase">Dog Mind Milano</div>
+          <div className="font-display text-xl mb-3 uppercase">DOG MIND MILANO</div>
           <p className="text-sm text-muted-foreground">Educatore cinofilo in formazione · Percorso ENCI.</p>
           <div className="flex items-center gap-2 text-sm text-muted-foreground mt-4">
             <MapPin className="h-4 w-4" /> Milano, Italia
