@@ -202,16 +202,14 @@ function About() {
           </div>
         </div>
 
-        <div className="lg:col-span-7">
+        <div className="lg:col-span-7 text-white">
           <SectionHeader
             kicker="Chi sono"
             title="Lavoro pratico, relazione vera, risultati nella vita di tutti i giorni."
           />
           <div className="space-y-5 text-base md:text-lg text-muted-foreground leading-relaxed text-pretty">
             <p>
-              Vivo i cani ogni giorno, non solo durante le lezioni. Sto completando il percorso
-              di formazione <span className="text-foreground">ENCI</span> e lavoro fianco a fianco con un Belgian
-              Malinois — un cane sensibile, attivo, esigente.
+              Il mio approccio è semplice: niente scorciatoie e niente spettacolarizzazione. Mi concentro su ciò che conta davvero: la vita quotidiana con il cane, dentro e fuori casa.
             </p>
             <p>
               Non te lo presento come "il cane perfetto". È il cane su cui imparo, ogni giorno,
