@@ -283,7 +283,7 @@ function Pricing() {
               Una sessione mirata, costruita sulla tua situazione reale.
             </p>
             <p className="text-sm text-foreground/90 mb-8">
-              Servizio a domicilio su Milano e dintorni, dal lunedì alla domenica.
+              Servizio a domicilio su Milano e dintorni
             </p>
             <div className="flex items-baseline gap-2 mb-10">
               <span className="font-display text-7xl">€60</span>
