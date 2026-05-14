@@ -214,7 +214,7 @@ function About() {
               La passione per i cani è il punto di partenza di tutto quello che faccio. Sto concludendo il percorso ENCI da educatore cinofilo, ma è il lavoro pratico di ogni giorno — sul campo, in strada, dentro casa — che mi forma davvero.
             </p>
             <p>
-              Convivo quotidianamente con un Pastore Belga Malinois: una razza che non lascia spazio a improvvisazioni e che mi obbliga, ogni giorno, a mettere al centro la relazione, l'ascolto e la coerenza. È il cane su cui imparo, sbaglio e affino il mio modo di lavorare.
+              Convivo quotidianamente con un Pastore Belga Malinois: una razza che non lascia spazio a improvvisazioni e che mi obbliga, ogni giorno, a mettere al centro la relazione, l'ascolto e la coerenza. È il cane su cui imparo, sbaglio e affino il mio modo di lavorare — un'esperienza che porto avanti anche sul campo con i cani dei miei clienti, ognuno con la propria storia, il proprio carattere e le proprie esigenze.
             </p>
             <p>
               Il mio approccio è realistico e concreto: niente scorciatoie, niente spettacolarizzazione. Mi concentro su ciò che conta davvero — la vita quotidiana con il tuo cane — costruendo una gestione sostenibile, fatta di piccoli passi che restano nel tempo.
