@@ -104,7 +104,7 @@ function Hero() {
             Educazione cinofila <span className="text-accent italic">di base</span> a Milano
           </h1>
           <p className="reveal reveal-delay-2 text-lg md:text-xl text-muted-foreground max-w-xl text-pretty mb-3">
-            Percorsi pratici per migliorare la vita quotidiana con il tuo cane.
+            Ti aiuto a vivere meglio con il tuo cane nella vita quotidiana.
           </p>
           <p className="reveal reveal-delay-2 text-base text-muted-foreground/80 max-w-xl mb-10">
             Specializzato in cuccioli, cani giovani e gestione urbana.
