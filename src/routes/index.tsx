@@ -62,7 +62,7 @@ function Header() {
     <header className="fixed top-0 inset-x-0 z-30 backdrop-blur-md bg-background/70 border-b border-border/50">
       <div className="container-px max-w-7xl mx-auto h-16 flex items-center justify-between">
         <a href="#top" className="flex items-center -ml-4 md:-ml-6">
-          <img src={logoImg} alt="Dog Mind Milano" className="h-10 w-auto" />
+          <img src={logoImg} alt="Dog Mind Milano" className="h-12 w-auto" />
         </a>
         <nav className="hidden md:flex items-center gap-8 text-sm text-muted-foreground">
           {nav.map((n) => (
