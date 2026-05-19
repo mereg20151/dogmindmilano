@@ -40,39 +40,39 @@
   /* Palette matched to the Dog Mind Milano logo:
      neutral off-white #F8F8F8, deep ink #212121, refined warm taupe accent.
      Background matches the logo plate so marks blend seamlessly. */
-  --background: oklch(0.973 0 0);              /* #F8F8F8 logo plate */
+  --background: oklch(1 0 0);                  /* pure white */
   --foreground: oklch(0.205 0 0);              /* #212121 ink */
 
-  --surface: oklch(0.955 0 0);                 /* soft neutral panel */
-  --surface-elevated: oklch(0.985 0 0);        /* lifted neutral */
+  --surface: oklch(1 0 0);                     /* white panel */
+  --surface-elevated: oklch(1 0 0);            /* white */
 
-  --card: oklch(0.985 0 0);
+  --card: oklch(1 0 0);
   --card-foreground: oklch(0.205 0 0);
-  --popover: oklch(0.985 0 0);
+  --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.205 0 0);
 
-  --primary: oklch(0.205 0 0);                 /* ink */
-  --primary-foreground: oklch(0.973 0 0);
+  --primary: oklch(0.205 0 0);
+  --primary-foreground: oklch(1 0 0);
 
-  --secondary: oklch(0.935 0 0);
+  --secondary: oklch(0.96 0 0);
   --secondary-foreground: oklch(0.205 0 0);
 
-  --muted: oklch(0.935 0 0);
+  --muted: oklch(0.96 0 0);
   --muted-foreground: oklch(0.45 0 0);
 
-  --accent: oklch(0.58 0.055 55);              /* refined warm taupe */
-  --accent-foreground: oklch(0.973 0 0);
+  --accent: oklch(0.205 0 0);
+  --accent-foreground: oklch(1 0 0);
 
   --destructive: oklch(0.55 0.18 25);
   --destructive-foreground: oklch(0.98 0 0);
 
-  --border: oklch(0.88 0 0 / 80%);
-  --input: oklch(0.9 0 0);
-  --ring: oklch(0.58 0.055 55);
+  --border: oklch(0.9 0 0);
+  --input: oklch(0.92 0 0);
+  --ring: oklch(0.205 0 0);
 }
 
 .dark {
-  --background: oklch(0.973 0 0);
+  --background: oklch(1 0 0);
   --foreground: oklch(0.205 0 0);
 }
 
