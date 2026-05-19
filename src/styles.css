@@ -40,11 +40,11 @@
   /* Palette matched to the Dog Mind Milano logo:
      neutral off-white #F8F8F8, deep ink #212121, refined warm taupe accent.
      Background matches the logo plate so marks blend seamlessly. */
-  --background: oklch(0.973 0 0);              /* #F8F8F8 logo plate */
+  --background: oklch(1 0 0);                  /* pure white */
   --foreground: oklch(0.205 0 0);              /* #212121 ink */
 
-  --surface: oklch(0.955 0 0);                 /* soft neutral panel */
-  --surface-elevated: oklch(0.985 0 0);        /* lifted neutral */
+  --surface: oklch(1 0 0);                     /* white panel */
+  --surface-elevated: oklch(1 0 0);            /* white */
 
   --card: oklch(0.985 0 0);
   --card-foreground: oklch(0.205 0 0);
