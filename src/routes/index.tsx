@@ -61,9 +61,8 @@ function Header() {
   return (
     <header className="fixed top-0 inset-x-0 z-30 backdrop-blur-md bg-background/70 border-b border-border/50">
       <div className="container-px max-w-7xl mx-auto h-16 flex items-center justify-between">
-        <a href="#top" className="flex items-center gap-2 font-display text-xl tracking-tight uppercase -ml-4 md:-ml-6">
-          <img src={logoImg} alt="Logo Dog Mind Milano" className="h-10 w-auto" />
-          DOG MIND MILANO
+        <a href="#top" className="flex items-center -ml-4 md:-ml-6">
+          <img src={logoImg} alt="Dog Mind Milano" className="h-10 w-auto" />
         </a>
         <nav className="hidden md:flex items-center gap-8 text-sm text-muted-foreground">
           {nav.map((n) => (
