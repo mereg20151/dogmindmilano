@@ -37,41 +37,42 @@
 :root {
   --radius: 0.5rem;
 
-  /* Premium dark palette: matte black, anthracite, warm white, desaturated olive */
-  --background: oklch(0.14 0.005 60);          /* matte black */
-  --foreground: oklch(0.96 0.008 80);          /* warm white */
+  /* Editorial palette inspired by the Dog Mind Milano logo:
+     ivory paper, deep ink black, warm antique gold */
+  --background: oklch(0.975 0.006 85);         /* ivory paper */
+  --foreground: oklch(0.18 0.004 60);          /* deep ink */
 
-  --surface: oklch(0.18 0.005 60);             /* anthracite */
-  --surface-elevated: oklch(0.22 0.006 60);
+  --surface: oklch(0.955 0.008 85);            /* warm paper */
+  --surface-elevated: oklch(0.99 0.005 85);    /* lifted ivory */
 
-  --card: oklch(0.18 0.005 60);
-  --card-foreground: oklch(0.96 0.008 80);
-  --popover: oklch(0.18 0.005 60);
-  --popover-foreground: oklch(0.96 0.008 80);
+  --card: oklch(0.99 0.005 85);
+  --card-foreground: oklch(0.18 0.004 60);
+  --popover: oklch(0.99 0.005 85);
+  --popover-foreground: oklch(0.18 0.004 60);
 
-  --primary: oklch(0.96 0.008 80);             /* warm white as primary surface */
-  --primary-foreground: oklch(0.14 0.005 60);
+  --primary: oklch(0.18 0.004 60);             /* black as primary */
+  --primary-foreground: oklch(0.975 0.006 85);
 
-  --secondary: oklch(0.24 0.006 60);
-  --secondary-foreground: oklch(0.96 0.008 80);
+  --secondary: oklch(0.93 0.012 85);
+  --secondary-foreground: oklch(0.18 0.004 60);
 
-  --muted: oklch(0.22 0.005 60);
-  --muted-foreground: oklch(0.68 0.008 80);
+  --muted: oklch(0.94 0.008 85);
+  --muted-foreground: oklch(0.42 0.008 70);
 
-  --accent: oklch(0.62 0.06 120);              /* desaturated olive green */
-  --accent-foreground: oklch(0.14 0.005 60);
+  --accent: oklch(0.72 0.10 80);               /* antique gold */
+  --accent-foreground: oklch(0.18 0.004 60);
 
   --destructive: oklch(0.55 0.18 25);
   --destructive-foreground: oklch(0.98 0 0);
 
-  --border: oklch(0.28 0.005 60 / 70%);
-  --input: oklch(0.28 0.005 60);
-  --ring: oklch(0.62 0.06 120);
+  --border: oklch(0.85 0.008 80 / 70%);
+  --input: oklch(0.88 0.008 80);
+  --ring: oklch(0.72 0.10 80);
 }
 
 .dark {
-  --background: oklch(0.14 0.005 60);
-  --foreground: oklch(0.96 0.008 80);
+  --background: oklch(0.975 0.006 85);
+  --foreground: oklch(0.18 0.004 60);
 }
 
 @layer base {
