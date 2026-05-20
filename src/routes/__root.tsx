@@ -82,8 +82,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:site", content: "@Lovable" },
       { name: "twitter:title", content: "DOGMIND MILANO" },
       { name: "twitter:description", content: "Aiuto cani e persone a costruire una relazione più equilibrata attraverso un percorso di educazione cinofila a Milano." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/3f823e27-69e9-4e51-b791-ddc3ae03b269/id-preview-07bdff3d--b038e3c6-46ab-4739-82ef-33f75c12bad7.lovable.app-1779293629648.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/3f823e27-69e9-4e51-b791-ddc3ae03b269/id-preview-07bdff3d--b038e3c6-46ab-4739-82ef-33f75c12bad7.lovable.app-1779293629648.png" },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/HgtnA3dyEBSPNebplz51hQewnhr2/social-images/social-1779294028069-Screenshot_2026-05-19_alle_11.20.50.webp" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/HgtnA3dyEBSPNebplz51hQewnhr2/social-images/social-1779294028069-Screenshot_2026-05-19_alle_11.20.50.webp" },
     ],
     links: [
       {
