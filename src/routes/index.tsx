@@ -473,26 +473,46 @@ function Reviews() {
 
 function FinalCta() {
   return (
-    <section className="py-24 md:py-36 bg-surface">
-      <div className="container-px max-w-4xl mx-auto text-center">
+    <section className="relative py-28 md:py-40 bg-surface-elevated overflow-hidden">
+      <div className="absolute inset-0 pointer-events-none opacity-[0.05]">
+        <div className="absolute -top-32 -right-32 w-[560px] h-[560px] rounded-full bg-accent blur-3xl" />
+      </div>
+      <div className="container-px max-w-4xl mx-auto text-center relative">
         <img src={logoImg} alt="Logo Dog Mind Milano" className="h-20 w-auto mx-auto mb-8 opacity-90" />
+        <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full border border-border bg-background text-[10px] uppercase tracking-[0.25em] font-bold text-muted-foreground">
+          <span className="h-1.5 w-1.5 rounded-full bg-accent animate-pulse" /> Posti limitati questa settimana
+        </div>
         <h2 className="text-4xl md:text-6xl lg:text-7xl text-balance leading-[1.05] mb-6">
           Inizia a vivere meglio <span className="italic text-accent">con il tuo cane</span>
         </h2>
-        <p className="text-base md:text-lg text-muted-foreground mb-10">
-          Compila il modulo e ti ricontatterò personalmente.
+        <p className="text-base md:text-xl text-muted-foreground mb-10 max-w-xl mx-auto leading-relaxed">
+          Compila il questionario o scrivimi su WhatsApp. Ti rispondo personalmente entro 48 ore.
         </p>
-        <a
-          href="#contatto"
-          className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-md text-sm font-medium hover:bg-primary/90 transition-all group"
-        >
-          Richiedi una consulenza
-          <ArrowRight className="h-4 w-4 group-hover:translate-x-0.5 transition-transform" />
-        </a>
+        <div className="flex flex-col sm:flex-row gap-3 justify-center">
+          <a
+            href="#contatto"
+            className="group inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-full text-xs uppercase tracking-[0.2em] font-bold hover:-translate-y-0.5 hover:shadow-2xl hover:shadow-primary/30 transition-all"
+          >
+            Richiedi una consulenza
+            <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+          </a>
+          <a
+            href="https://wa.me/393318165762?text=Ciao%20Sam%2C%20vorrei%20informazioni"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-2 bg-background border border-border text-foreground px-8 py-4 rounded-full text-xs uppercase tracking-[0.2em] font-bold hover:border-foreground/30 hover:bg-surface transition-all"
+          >
+            <MessageCircle className="h-4 w-4 text-accent" /> Scrivimi su WhatsApp
+          </a>
+        </div>
+        <p className="mt-8 text-xs text-muted-foreground">
+          Nessun impegno · Prima valutazione gratuita
+        </p>
       </div>
     </section>
   );
 }
+
 
 function Footer() {
   return (
