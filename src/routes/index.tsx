@@ -1,8 +1,13 @@
+import { useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import {
   Dog, Baby, Building2, Link as LinkIcon, Target, Sparkles,
   Instagram, MessageCircle, Mail, MapPin, Star, ArrowRight, Check,
+  Menu, X,
 } from "lucide-react";
+import {
+  Sheet, SheetTrigger, SheetContent, SheetClose,
+} from "@/components/ui/sheet";
 import heroImg from "@/assets/hero-malinois.jpg";
 import portraitImg from "@/assets/about-portrait.jpg";
 import action1 from "@/assets/action-1.jpg";
