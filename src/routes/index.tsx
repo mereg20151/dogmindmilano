@@ -66,7 +66,7 @@ const nav = [
 
 function Home() {
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen bg-background text-foreground pb-24 md:pb-0">
       <Header />
       <Hero />
       <Target1 />
@@ -81,6 +81,7 @@ function Home() {
     </div>
   );
 }
+
 
 function Header() {
   const [open, setOpen] = useState(false);
