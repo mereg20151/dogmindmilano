@@ -143,55 +143,70 @@ function Header() {
 
 function Hero() {
   return (
-    <section id="top" className="relative min-h-screen flex items-center px-6 md:px-12 pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden bg-background">
+    <section id="top" className="relative min-h-screen flex items-center px-6 md:px-12 pt-32 pb-24 md:pt-40 md:pb-32 overflow-hidden bg-background">
       <div className="max-w-7xl mx-auto w-full grid md:grid-cols-12 gap-12 lg:gap-20 items-center relative z-10">
         <div className="md:col-span-7">
           <div className="reveal flex items-center gap-4 mb-8">
             <div className="h-px w-12 bg-accent" />
             <span className="text-[10px] uppercase tracking-[0.35em] font-bold text-muted-foreground">Educazione cinofila · Milano</span>
           </div>
-          <h1 className="reveal reveal-delay-1 font-display text-6xl md:text-8xl lg:text-[7.5rem] leading-[0.88] tracking-tight text-foreground mb-10">
-            Educazione <br />
-            cinofila <span className="italic font-light text-accent">di base</span>
+          <h1 className="reveal reveal-delay-1 font-display text-5xl sm:text-6xl md:text-8xl lg:text-[7.5rem] leading-[0.9] tracking-tight text-foreground mb-8">
+            Il tuo cane,<br />
+            <span className="italic font-light text-accent">finalmente</span> sereno<br />
+            in città.
           </h1>
-          <p className="reveal reveal-delay-2 max-w-lg text-lg md:text-xl text-muted-foreground leading-relaxed font-light mb-12">
-            Ti aiuto a vivere meglio con il tuo cane nella vita quotidiana.
-            <span className="block mt-2 text-foreground/80">Specializzato in cuccioli, cani giovani e gestione urbana.</span>
+          <p className="reveal reveal-delay-2 max-w-xl text-lg md:text-2xl text-muted-foreground leading-relaxed font-light mb-10">
+            Sessioni 1:1 a Milano per costruire una relazione vera con il tuo cane.
+            <span className="block mt-2 text-foreground/85">Niente comandi a memoria — gestione concreta che resta nel tempo.</span>
           </p>
-          <div className="reveal reveal-delay-3 flex flex-wrap gap-4">
+          <div className="reveal reveal-delay-3 flex flex-col sm:flex-row flex-wrap gap-3">
             <a
               href="#contatto"
-              className="group inline-flex items-center gap-3 bg-primary text-primary-foreground px-8 py-4 rounded-full text-xs uppercase tracking-[0.2em] font-bold transition-all hover:-translate-y-0.5 hover:shadow-2xl hover:shadow-accent/20"
+              className="group inline-flex items-center justify-center gap-3 bg-primary text-primary-foreground px-7 py-4 rounded-full text-xs uppercase tracking-[0.2em] font-bold transition-all hover:-translate-y-0.5 hover:shadow-2xl hover:shadow-primary/30"
             >
-              Inizia il percorso
+              Prenota la prima sessione
               <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </a>
             <a
-              href="#metodo"
-              className="inline-flex items-center gap-2 border border-border text-foreground px-8 py-4 rounded-full text-xs uppercase tracking-[0.2em] font-bold hover:bg-surface transition-all"
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 border border-border text-foreground px-7 py-4 rounded-full text-xs uppercase tracking-[0.2em] font-bold hover:bg-surface-elevated hover:border-foreground/30 transition-all"
             >
-              Il mio metodo
+              <Instagram className="h-4 w-4" /> Scrivimi su Instagram
             </a>
           </div>
-          <div className="reveal reveal-delay-4 mt-16 flex flex-col gap-2">
-            <div className="flex items-center gap-3">
-              <div className="w-2 h-2 rounded-full bg-accent" />
-              <span className="text-[10px] uppercase tracking-[0.25em] text-muted-foreground font-semibold">Percorso ENCI in formazione</span>
+          <div className="reveal reveal-delay-4 mt-14 grid grid-cols-3 gap-6 max-w-lg border-t border-border pt-8">
+            <div>
+              <div className="font-display text-3xl text-foreground">120+</div>
+              <div className="text-[10px] uppercase tracking-[0.18em] text-muted-foreground mt-1">Sessioni svolte</div>
             </div>
-            <p className="text-[10px] uppercase tracking-[0.25em] text-muted-foreground/70 ml-5">Disponibile a Milano e hinterland</p>
+            <div>
+              <div className="font-display text-3xl text-foreground">48h</div>
+              <div className="text-[10px] uppercase tracking-[0.18em] text-muted-foreground mt-1">Risposta garantita</div>
+            </div>
+            <div>
+              <div className="font-display text-3xl text-foreground">ENCI</div>
+              <div className="text-[10px] uppercase tracking-[0.18em] text-muted-foreground mt-1">Percorso in corso</div>
+            </div>
           </div>
         </div>
 
         <div className="md:col-span-5 relative">
-          <div className="relative rounded-3xl overflow-hidden shadow-[0_32px_64px_-16px_rgba(0,0,0,0.18)] bg-surface aspect-[3/4]">
+          <div className="relative rounded-3xl overflow-hidden shadow-[0_32px_64px_-16px_rgba(0,0,0,0.18)] bg-surface aspect-[3/4] group">
             <img
               src={heroImg}
-              alt="Belgian Malinois a Milano"
+              alt="Educatore cinofilo a Milano con Belgian Malinois"
               width={1024}
               height={1365}
-              className="w-full h-full object-cover scale-105 hover:scale-100 transition-transform duration-700"
+              loading="eager"
+              className="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-[1200ms] ease-out"
             />
             <div className="absolute inset-0 ring-1 ring-inset ring-black/5 rounded-3xl pointer-events-none" />
+            <div className="absolute bottom-4 left-4 right-4 flex items-center gap-2 text-[10px] uppercase tracking-[0.2em] text-white/90 bg-black/30 backdrop-blur-md rounded-full px-4 py-2.5">
+              <span className="h-1.5 w-1.5 rounded-full bg-accent animate-pulse" />
+              Disponibile · prossime sessioni questa settimana
+            </div>
           </div>
           <div className="hidden md:flex absolute -bottom-6 -right-6 w-32 h-32 rounded-full bg-background shadow-xl items-center justify-center p-4 border border-border">
             <svg viewBox="0 0 100 100" className="w-full h-full animate-[spin_14s_linear_infinite] text-muted-foreground">
@@ -215,6 +230,7 @@ function Hero() {
     </section>
   );
 }
+
 
 function SectionHeader({ kicker, title, sub }: { kicker: string; title: string; sub?: string }) {
   return (
