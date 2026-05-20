@@ -65,29 +65,32 @@ function Home() {
 function Header() {
   const [open, setOpen] = useState(false);
   return (
-    <header className="fixed top-0 inset-x-0 z-30 backdrop-blur-md bg-background/70 border-b border-border/50">
-      <div className="container-px max-w-7xl mx-auto h-16 flex items-center justify-between">
-        <a href="#top" className="flex items-center gap-3 -ml-4 md:-ml-6">
-          <img src={logoImg} alt="Dog Mind Milano" className="h-16 w-auto" />
-          <span className="font-display text-lg md:text-xl text-foreground leading-none">Dog Mind Milano</span>
+    <header className="fixed top-4 md:top-6 inset-x-0 z-30 px-4 md:px-6">
+      <div className="max-w-7xl mx-auto px-4 md:px-6 py-3 flex items-center justify-between bg-background/70 backdrop-blur-xl border border-border rounded-full shadow-sm">
+        <a href="#top" className="flex items-center gap-3 shrink-0">
+          <img src={logoImg} alt="Dog Mind Milano" className="h-10 md:h-12 w-auto" />
+          <div className="flex flex-col leading-none">
+            <span className="font-display text-base md:text-lg text-foreground">Dog Mind</span>
+            <span className="text-[9px] uppercase tracking-[0.25em] text-muted-foreground font-semibold mt-1">Milano</span>
+          </div>
         </a>
-        <nav className="hidden md:flex items-center gap-8 text-sm text-muted-foreground">
+        <nav className="hidden lg:flex items-center gap-7 text-[10px] font-bold uppercase tracking-[0.25em] text-muted-foreground">
           {nav.map((n) => (
-            <a key={n.href} href={n.href} className="hover:text-foreground transition-colors">
+            <a key={n.href} href={n.href} className="hover:text-accent transition-colors">
               {n.label}
             </a>
           ))}
         </nav>
         <a
           href="#contatto"
-          className="hidden md:inline-flex items-center gap-2 bg-primary text-primary-foreground px-4 py-2 rounded-md text-sm font-medium hover:bg-primary/90 transition-all"
+          className="hidden md:inline-flex items-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-full text-[10px] font-bold uppercase tracking-[0.2em] hover:brightness-110 transition-all"
         >
           Consulenza
         </a>
         <Sheet open={open} onOpenChange={setOpen}>
           <SheetTrigger asChild>
-            <button className="md:hidden inline-flex items-center justify-center p-2 rounded-md text-foreground hover:bg-surface transition-colors">
-              <Menu className="h-6 w-6" />
+            <button className="md:hidden inline-flex items-center justify-center p-2 rounded-full text-foreground hover:bg-surface transition-colors">
+              <Menu className="h-5 w-5" />
               <span className="sr-only">Apri menu</span>
             </button>
           </SheetTrigger>
@@ -106,7 +109,7 @@ function Header() {
               <a
                 href="#contatto"
                 onClick={() => setOpen(false)}
-                className="mt-4 inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-4 py-3 rounded-md text-sm font-medium hover:bg-primary/90 transition-all"
+                className="mt-4 inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-4 py-3 rounded-full text-xs font-bold uppercase tracking-[0.2em] hover:brightness-110 transition-all"
               >
                 Consulenza
               </a>
@@ -120,51 +123,74 @@ function Header() {
 
 function Hero() {
   return (
-    <section id="top" className="relative min-h-[100svh] flex items-end pb-20 md:pb-28 overflow-hidden">
-      <img
-        src={heroImg}
-        alt="Belgian Malinois in una via di Milano al tramonto"
-        width={1920}
-        height={1280}
-        className="absolute inset-0 w-full h-full object-cover"
-      />
-      <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-background/40" />
-      <div className="absolute inset-0 bg-gradient-to-r from-background/60 via-transparent to-transparent" />
-
-      <div className="relative container-px max-w-7xl mx-auto w-full">
-        <div className="max-w-2xl">
-          <div className="reveal inline-flex items-center gap-2 text-xs uppercase tracking-[0.25em] text-muted-foreground mb-6">
-            <span className="h-px w-8 bg-accent" />
-            Milano · Educazione cinofila
+    <section id="top" className="relative min-h-screen flex items-center px-6 md:px-12 pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden bg-background">
+      <div className="max-w-7xl mx-auto w-full grid md:grid-cols-12 gap-12 lg:gap-20 items-center relative z-10">
+        <div className="md:col-span-7">
+          <div className="reveal flex items-center gap-4 mb-8">
+            <div className="h-px w-12 bg-accent" />
+            <span className="text-[10px] uppercase tracking-[0.35em] font-bold text-muted-foreground">Educazione cinofila · Milano</span>
           </div>
-          <h1 className="reveal reveal-delay-1 text-5xl md:text-7xl lg:text-8xl text-balance leading-[1.02] mb-6">
-            Educazione cinofila <span className="text-accent italic">di base</span> a Milano
+          <h1 className="reveal reveal-delay-1 font-display text-6xl md:text-8xl lg:text-[7.5rem] leading-[0.88] tracking-tight text-foreground mb-10">
+            Educazione <br />
+            cinofila <span className="italic font-light text-accent">di base</span>
           </h1>
-          <p className="reveal reveal-delay-2 text-lg md:text-xl text-muted-foreground max-w-xl text-pretty mb-3">
+          <p className="reveal reveal-delay-2 max-w-lg text-lg md:text-xl text-muted-foreground leading-relaxed font-light mb-12">
             Ti aiuto a vivere meglio con il tuo cane nella vita quotidiana.
+            <span className="block mt-2 text-foreground/80">Specializzato in cuccioli, cani giovani e gestione urbana.</span>
           </p>
-          <p className="reveal reveal-delay-2 text-base text-muted-foreground/80 max-w-xl mb-10">
-            Specializzato in cuccioli, cani giovani e gestione urbana.
-          </p>
-          <div className="reveal reveal-delay-3 flex flex-col sm:flex-row gap-3">
+          <div className="reveal reveal-delay-3 flex flex-wrap gap-4">
             <a
               href="#contatto"
-              className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-7 py-3.5 rounded-md text-sm font-medium hover:bg-primary/90 transition-all group"
+              className="group inline-flex items-center gap-3 bg-primary text-primary-foreground px-8 py-4 rounded-full text-xs uppercase tracking-[0.2em] font-bold transition-all hover:-translate-y-0.5 hover:shadow-2xl hover:shadow-accent/20"
             >
-              Richiedi una consulenza
-              <ArrowRight className="h-4 w-4 group-hover:translate-x-0.5 transition-transform" />
+              Inizia il percorso
+              <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </a>
             <a
               href="#metodo"
-              className="inline-flex items-center justify-center gap-2 border border-border text-foreground px-7 py-3.5 rounded-md text-sm font-medium hover:bg-surface transition-all"
+              className="inline-flex items-center gap-2 border border-border text-foreground px-8 py-4 rounded-full text-xs uppercase tracking-[0.2em] font-bold hover:bg-surface transition-all"
             >
-              Scopri come lavoro
+              Il mio metodo
             </a>
           </div>
-          <div className="reveal reveal-delay-4 mt-10 text-xs uppercase tracking-[0.2em] text-muted-foreground/70">
-            Educatore cinofilo in formazione · Percorso ENCI
+          <div className="reveal reveal-delay-4 mt-16 flex flex-col gap-2">
+            <div className="flex items-center gap-3">
+              <div className="w-2 h-2 rounded-full bg-accent" />
+              <span className="text-[10px] uppercase tracking-[0.25em] text-muted-foreground font-semibold">Percorso ENCI in formazione</span>
+            </div>
+            <p className="text-[10px] uppercase tracking-[0.25em] text-muted-foreground/70 ml-5">Disponibile a Milano e hinterland</p>
           </div>
         </div>
+
+        <div className="md:col-span-5 relative">
+          <div className="relative rounded-3xl overflow-hidden shadow-[0_32px_64px_-16px_rgba(0,0,0,0.18)] bg-surface aspect-[3/4]">
+            <img
+              src={heroImg}
+              alt="Belgian Malinois a Milano"
+              width={1024}
+              height={1365}
+              className="w-full h-full object-cover scale-105 hover:scale-100 transition-transform duration-700"
+            />
+            <div className="absolute inset-0 ring-1 ring-inset ring-black/5 rounded-3xl pointer-events-none" />
+          </div>
+          <div className="hidden md:flex absolute -bottom-6 -right-6 w-32 h-32 rounded-full bg-background shadow-xl items-center justify-center p-4 border border-border">
+            <svg viewBox="0 0 100 100" className="w-full h-full animate-[spin_14s_linear_infinite] text-muted-foreground">
+              <path id="dmm-textpath" d="M 50,50 m -37,0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="none" />
+              <text fontSize="11" fontWeight="600" className="uppercase tracking-[0.1em] fill-current">
+                <textPath href="#dmm-textpath">• Dog Mind Milano • Educazione Cinofila </textPath>
+              </text>
+            </svg>
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="w-10 h-10 rounded-full bg-accent flex items-center justify-center">
+                <Dog className="h-5 w-5 text-accent-foreground" strokeWidth={1.6} />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="absolute bottom-0 left-0 p-12 opacity-[0.04] pointer-events-none select-none">
+        <span className="font-display text-[20vw] leading-none whitespace-nowrap">MILANO</span>
       </div>
     </section>
   );
