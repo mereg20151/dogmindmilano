@@ -166,7 +166,7 @@ function Hero() {
               href="#contatto"
               className="group inline-flex items-center justify-center gap-3 bg-primary text-primary-foreground px-7 py-4 rounded-full text-xs uppercase tracking-[0.2em] font-bold transition-all hover:-translate-y-0.5 hover:shadow-2xl hover:shadow-primary/30"
             >
-              Prenota la prima sessione
+              PRENOTA LA PRIMA CONSULENZA
               <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </a>
             <a
