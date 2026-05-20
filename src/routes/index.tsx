@@ -148,20 +148,20 @@ function Hero() {
     <section id="top" className="relative min-h-screen flex items-center px-6 md:px-12 pt-32 pb-24 md:pt-40 md:pb-32 overflow-hidden bg-background">
       <div className="max-w-7xl mx-auto w-full grid md:grid-cols-12 gap-12 lg:gap-20 items-center relative z-10">
         <div className="md:col-span-7">
-          <div className="reveal flex items-center gap-4 mb-8">
+          <div className="reveal flex items-center justify-center gap-4 mb-8">
             <div className="h-px w-12 bg-accent" />
             <span className="text-[10px] uppercase tracking-[0.35em] font-bold text-muted-foreground">Educazione cinofila · Milano</span>
+            <div className="h-px w-12 bg-accent" />
           </div>
-          <h1 className="reveal reveal-delay-1 font-display text-5xl sm:text-6xl md:text-8xl lg:text-[7.5rem] leading-[0.9] tracking-tight text-foreground mb-8">
+          <h1 className="reveal reveal-delay-1 font-display text-5xl sm:text-6xl md:text-8xl lg:text-[7.5rem] leading-[0.9] tracking-tight text-foreground mb-8 text-center">
             Il tuo cane,<br />
             <span className="italic font-light text-accent">finalmente</span> sereno<br />
             in città.
           </h1>
-          <p className="reveal reveal-delay-2 max-w-xl text-lg md:text-2xl text-muted-foreground leading-relaxed font-light mb-10">
-            Sessioni 1:1 a Milano per costruire una relazione vera con il tuo cane.
-            <span className="block mt-2 text-foreground/85">Niente comandi a memoria — gestione concreta che resta nel tempo.</span>
+          <p className="reveal reveal-delay-2 max-w-xl text-lg md:text-2xl text-muted-foreground leading-relaxed font-light mb-10 text-center mx-auto">
+            Educazione di base e gestione quotidiana. Per chi vuole costruire un cane equilibrato nella vita reale di città.
           </p>
-          <div className="reveal reveal-delay-3 flex flex-col sm:flex-row flex-wrap gap-3">
+          <div className="reveal reveal-delay-3 flex flex-col sm:flex-row flex-wrap gap-3 justify-center">
             <a
               href="#contatto"
               className="group inline-flex items-center justify-center gap-3 bg-primary text-primary-foreground px-7 py-4 rounded-full text-xs uppercase tracking-[0.2em] font-bold transition-all hover:-translate-y-0.5 hover:shadow-2xl hover:shadow-primary/30"
