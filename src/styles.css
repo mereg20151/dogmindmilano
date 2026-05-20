@@ -37,38 +37,38 @@
 :root {
   --radius: 0.5rem;
 
-  /* Palette matched to the Dog Mind Milano logo:
-     neutral off-white #F8F8F8, deep ink #212121, refined warm taupe accent.
-     Background matches the logo plate so marks blend seamlessly. */
-  --background: oklch(1 0 0);                  /* pure white */
-  --foreground: oklch(0.205 0 0);              /* #212121 ink */
+  /* Dog Mind Milano — bianco / verde / nero.
+     Sfondo bianco puro per fondersi col logo, inchiostro nero,
+     verde forestale come unico accento vivo. */
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.18 0 0);
 
-  --surface: oklch(1 0 0);                     /* white panel */
-  --surface-elevated: oklch(1 0 0);            /* white */
+  --surface: oklch(1 0 0);
+  --surface-elevated: oklch(0.985 0.003 145);
 
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.205 0 0);
+  --card-foreground: oklch(0.18 0 0);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.205 0 0);
+  --popover-foreground: oklch(0.18 0 0);
 
-  --primary: oklch(0.205 0 0);
+  --primary: oklch(0.42 0.13 148);             /* verde forestale profondo */
   --primary-foreground: oklch(1 0 0);
 
-  --secondary: oklch(0.96 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.96 0.01 145);
+  --secondary-foreground: oklch(0.18 0 0);
 
-  --muted: oklch(0.96 0 0);
-  --muted-foreground: oklch(0.45 0 0);
+  --muted: oklch(0.965 0.005 145);
+  --muted-foreground: oklch(0.45 0.01 145);
 
-  --accent: oklch(0.205 0 0);
+  --accent: oklch(0.42 0.13 148);              /* stesso verde dell'accento */
   --accent-foreground: oklch(1 0 0);
 
   --destructive: oklch(0.55 0.18 25);
   --destructive-foreground: oklch(0.98 0 0);
 
-  --border: oklch(0.9 0 0);
-  --input: oklch(0.92 0 0);
-  --ring: oklch(0.205 0 0);
+  --border: oklch(0.91 0.008 145);
+  --input: oklch(0.93 0.008 145);
+  --ring: oklch(0.42 0.13 148);
 }
 
 .dark {
