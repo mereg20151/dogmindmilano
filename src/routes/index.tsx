@@ -18,21 +18,41 @@ import logoImg from "@/assets/logo-dog-mind-milano.png";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Educatore cinofilo a Milano — Educazione e gestione urbana" },
-      { name: "description", content: "Educatore cinofilo a Milano, percorso ENCI in formazione. Percorsi pratici per cuccioli, cani giovani e gestione quotidiana in città." },
-      { name: "keywords", content: "educatore cinofilo Milano, educazione cane Milano, educatore cuccioli Milano" },
-      { property: "og:title", content: "Educatore cinofilo a Milano" },
-      { property: "og:description", content: "Percorsi pratici per migliorare la vita quotidiana con il tuo cane." },
+      { title: "Dog Mind Milano · Educatore cinofilo a Milano | Sessioni 1:1" },
+      { name: "description", content: "Educatore cinofilo a Milano. Sessioni private a domicilio per cuccioli, cani giovani e gestione urbana. Metodo basato sulla relazione. Prima consulenza in 48h." },
+      { name: "keywords", content: "educatore cinofilo Milano, addestramento cani Milano, educazione cuccioli Milano, gestione urbana cane, ENCI" },
+      { property: "og:title", content: "Dog Mind Milano — Educazione cinofila moderna" },
+      { property: "og:description", content: "Sessioni private 1:1 a Milano per costruire un cane equilibrato nella vita di tutti i giorni." },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/" },
+      { property: "og:url", content: "https://dogmindmilano.lovable.app/" },
+      { property: "og:image", content: "https://dogmindmilano.lovable.app/og-cover.jpg" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "theme-color", content: "#0a0a0a" },
     ],
     links: [
-      { rel: "canonical", href: "/" },
+      { rel: "canonical", href: "https://dogmindmilano.lovable.app/" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
-      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Instrument+Serif&display=swap" },
+      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Instrument+Serif&display=swap" },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          name: "Dog Mind Milano",
+          description: "Educatore cinofilo a Milano — sessioni private di educazione e gestione urbana.",
+          areaServed: "Milano",
+          telephone: "+393318165762",
+          email: "almasio.sam@gmail.com",
+          url: "https://dogmindmilano.lovable.app/",
+          address: { "@type": "PostalAddress", addressLocality: "Milano", addressCountry: "IT" },
+        }),
+      },
     ],
   }),
+
   component: Home,
 });
 
