@@ -124,7 +124,7 @@ export function MultiStepForm() {
               <input className={inputCls} value={data.telefono} onChange={(e) => update("telefono", e.target.value)} placeholder="+39" />
             </Field>
             <Field label="Email">
-              <input type="email" className={inputCls} value={data.email} onChange={(e) => update("email", e.target.value)} placeholder="tu@esempio.it" />
+              <input type="email" className={inputCls} value={data.email} onChange={(e) => update("email", e.target.value)} placeholder="tu@email.it" />
             </Field>
             <Field label="Zona di Milano">
               <input className={inputCls} value={data.zona} onChange={(e) => update("zona", e.target.value)} placeholder="Es. Porta Romana" />

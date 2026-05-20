@@ -45,7 +45,7 @@ export const Route = createFileRoute("/")({
           description: "Educatore cinofilo a Milano — sessioni private di educazione e gestione urbana.",
           areaServed: "Milano",
           telephone: "+393318165762",
-          email: "almasio.sam@gmail.com",
+          email: "dogmindmilano@gmail.com",
           url: "https://dogmindmilano.lovable.app/",
           address: { "@type": "PostalAddress", addressLocality: "Milano", addressCountry: "IT" },
         }),
@@ -410,10 +410,10 @@ function FormSection() {
           <MessageCircle className="h-4 w-4 text-accent" /> +39 331 8165762
         </a>
         <a
-          href="mailto:almasio.sam@gmail.com"
+          href="mailto:dogmindmilano@gmail.com"
           className="inline-flex items-center justify-center gap-2 flex-1 border border-border rounded-md px-5 py-3.5 text-sm text-foreground hover:bg-surface transition-colors"
         >
-          <Mail className="h-4 w-4 text-accent" /> almasio.sam@gmail.com
+          <Mail className="h-4 w-4 text-accent" /> dogmindmilano@gmail.com
         </a>
       </div>
       <MultiStepForm />
@@ -511,7 +511,7 @@ function Footer() {
           <div className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-4">Contatti</div>
           <ul className="space-y-3 text-sm">
             <li><a href="https://wa.me/393318165762" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-foreground hover:text-accent transition-colors"><MessageCircle className="h-4 w-4" /> +39 331 8165762</a></li>
-            <li><a href="mailto:almasio.sam@gmail.com" className="inline-flex items-center gap-2 text-foreground hover:text-accent transition-colors"><Mail className="h-4 w-4" /> almasio.sam@gmail.com</a></li>
+            <li><a href="mailto:dogmindmilano@gmail.com" className="inline-flex items-center gap-2 text-foreground hover:text-accent transition-colors"><Mail className="h-4 w-4" /> dogmindmilano@gmail.com</a></li>
             <li><a href="#" className="inline-flex items-center gap-2 text-foreground hover:text-accent transition-colors"><Instagram className="h-4 w-4" /> Instagram</a></li>
           </ul>
         </div>
