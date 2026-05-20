@@ -512,7 +512,7 @@ function FinalCta() {
           </a>
         </div>
         <p className="mt-8 text-xs text-muted-foreground">
-          Nessun impegno · Prima valutazione gratuita
+          Nessun impegno
         </p>
       </div>
     </section>
