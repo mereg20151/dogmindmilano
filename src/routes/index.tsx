@@ -303,7 +303,7 @@ function About() {
           </div>
         </div>
 
-        <div className="lg:col-span-7 text-white">
+        <div className="lg:col-span-7">
           <SectionHeader
             kicker="CHI SONO"
             title="Lavoro pratico, relazione vera, risultati nella vita di tutti i giorni."
