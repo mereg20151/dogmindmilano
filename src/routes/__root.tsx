@@ -82,8 +82,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:site", content: "@Lovable" },
       { name: "twitter:title", content: "DOGMIND MILANO" },
       { name: "twitter:description", content: "Aiuto cani e persone a costruire una relazione più equilibrata attraverso un percorso di educazione cinofila a Milano." },
-      { property: "og:image", content: "https://dogmindmilano.lovable.app/logo-dog-mind-milano.png" },
-      { name: "twitter:image", content: "https://dogmindmilano.lovable.app/logo-dog-mind-milano.png" },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/HgtnA3dyEBSPNebplz51hQewnhr2/social-images/social-1779294290064-Screenshot_2026-05-19_alle_11.20.50.webp" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/HgtnA3dyEBSPNebplz51hQewnhr2/social-images/social-1779294290064-Screenshot_2026-05-19_alle_11.20.50.webp" },
     ],
     links: [
       {
