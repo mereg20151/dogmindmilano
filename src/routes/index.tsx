@@ -344,10 +344,7 @@ function Method() {
       <div className="grid md:grid-cols-2 gap-x-12 gap-y-2">
         {steps.map((s, i) => (
           <div key={s.n} className="group relative py-8 border-t border-border first:border-t md:[&:nth-child(2)]:border-t flex gap-6 md:gap-10">
-            <div className="flex flex-col items-center w-12 shrink-0 gap-2">
-              <img src={logoImg} alt="Dog Mind Milano" className="h-8 w-auto opacity-80" />
-              <div className="font-display text-3xl text-accent">{s.n}</div>
-            </div>
+            <div className="font-display text-3xl text-accent w-12 shrink-0">{s.n}</div>
             <div>
               <h3 className="font-display text-2xl md:text-3xl mb-2">{s.title}</h3>
               <p className="text-sm md:text-base text-muted-foreground leading-relaxed">{s.desc}</p>
