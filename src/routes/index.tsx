@@ -134,7 +134,7 @@ function Header() {
               >
                 Consulenza
               </a>
-              <img src={logoImg} alt="Dog Mind Milano" className="h-8 w-auto opacity-70 mt-4" />
+              <img src={logoImg} alt="Dog Mind Milano" className="h-12 w-auto object-contain self-start shrink-0 opacity-70 mt-4" />
             </div>
           </SheetContent>
         </Sheet>
