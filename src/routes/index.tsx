@@ -291,45 +291,18 @@ function About() {
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="grid grid-cols-2 gap-3 mt-3">
+          <div className="mt-3">
             <div className="aspect-square overflow-hidden rounded-xl">
               <img src={action1} alt="Lavoro pratico con Belgian Malinois" loading="lazy" width={1024} height={1024} className="w-full h-full object-cover" />
-            </div>
-            <div className="aspect-square overflow-hidden rounded-xl bg-background border border-border flex items-center justify-center p-6 text-center">
-              <p className="font-display text-sm text-muted-foreground italic leading-relaxed">
-                "Un cane equilibrato non nasce, si costruisce — un giorno alla volta."
-              </p>
             </div>
           </div>
         </div>
 
         <div className="lg:col-span-7">
           <SectionHeader
-            kicker="CHI SONO"
-            title="Lavoro pratico, relazione vera, risultati nella vita di tutti i giorni."
+            kicker=""
+            title="PRIMA CONSULENZA"
           />
-          <div className="space-y-5 font-sans text-base md:text-lg text-muted-foreground leading-relaxed text-pretty [&_p]:font-sans [&_span]:font-sans">
-            <h4 className="text-foreground font-medium">Chi sono</h4>
-            <p>
-              Mi chiamo Sam e mi occupo di educazione cinofila con un approccio basato sulla comprensione del cane, sulla comunicazione e sulla costruzione di un rapporto equilibrato tra animale e proprietario.
-            </p>
-            <p>
-              Sto seguendo un percorso di formazione nel settore cinofilo e, parallelamente, faccio esperienza pratica ogni giorno lavorando con cani e famiglie in contesti diversi. Questo mi permette di approfondire continuamente il comportamento del cane e migliorare il mio metodo di lavoro.
-            </p>
-            <p>
-              Credo che ogni cane abbia esigenze e caratteristiche diverse, per questo ogni percorso viene adattato alla singola situazione, con attenzione sia al benessere dell’animale sia alle necessità della famiglia.
-            </p>
-            <p>
-              L’obiettivo del mio lavoro è aiutare le persone a vivere il proprio cane con maggiore serenità nella quotidianità, migliorando la gestione, la comunicazione e la relazione reciproca.
-            </p>
-          </div>
-          <div className="mt-10 flex flex-wrap gap-3">
-            {["Pratica quotidiana", "Approccio basato sulla relazione"].map((t) => (
-              <span key={t} className="text-xs uppercase tracking-[0.18em] text-muted-foreground border border-border px-3 py-2 rounded-full">
-                {t}
-              </span>
-            ))}
-          </div>
         </div>
       </div>
     </section>
