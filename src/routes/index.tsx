@@ -148,9 +148,10 @@ function Hero() {
     <section id="top" className="relative min-h-screen flex items-center px-6 md:px-12 pt-32 pb-24 md:pt-40 md:pb-32 overflow-hidden bg-background">
       <div className="max-w-7xl mx-auto w-full grid md:grid-cols-12 gap-12 lg:gap-20 items-center relative z-10">
         <div className="md:col-span-7">
-          <div className="reveal flex items-center gap-4 mb-8">
+          <div className="reveal flex items-center justify-center gap-4 mb-8">
             <div className="h-px w-12 bg-accent" />
             <span className="text-[10px] uppercase tracking-[0.35em] font-bold text-muted-foreground">Educazione cinofila · Milano</span>
+            <div className="h-px w-12 bg-accent" />
           </div>
           <h1 className="reveal reveal-delay-1 font-display text-5xl sm:text-6xl md:text-8xl lg:text-[7.5rem] leading-[0.9] tracking-tight text-foreground mb-8 text-center">
             Il tuo cane,<br />
