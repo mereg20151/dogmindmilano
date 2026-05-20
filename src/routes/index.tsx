@@ -305,22 +305,26 @@ function About() {
 
         <div className="lg:col-span-7 text-white">
           <SectionHeader
-            kicker="Chi sono"
+            kicker="CHI SONO"
             title="Lavoro pratico, relazione vera, risultati nella vita di tutti i giorni."
           />
           <div className="space-y-5 font-sans text-base md:text-lg text-muted-foreground leading-relaxed text-pretty [&_p]:font-sans [&_span]:font-sans">
+            <h4 className="text-foreground font-medium">Chi sono</h4>
             <p>
-              Il mio approccio è realistico e concreto: niente scorciatoie, niente spettacolarizzazione. Mi concentro su ciò che conta davvero, la vita quotidiana con il tuo cane, costruendo una gestione sostenibile, fatta di piccoli passi che restano nel tempo.
+              Mi chiamo Sam e mi occupo di educazione cinofila con un approccio basato sulla comprensione del cane, sulla comunicazione e sulla costruzione di un rapporto equilibrato tra animale e proprietario.
             </p>
             <p>
-              Convivo quotidianamente con un Pastore Belga Malinois: una razza che non lascia spazio a improvvisazioni e che mi obbliga, ogni giorno, a mettere al centro la relazione, l'ascolto e la coerenza. È il cane su cui imparo, sbaglio e affino il mio modo di lavorare — un'esperienza che porto avanti anche sul campo con i cani dei miei clienti, ognuno con la propria storia, il proprio carattere e le proprie esigenze.
+              Sto seguendo un percorso di formazione nel settore cinofilo e, parallelamente, faccio esperienza pratica ogni giorno lavorando con cani e famiglie in contesti diversi. Questo mi permette di approfondire continuamente il comportamento del cane e migliorare il mio metodo di lavoro.
             </p>
             <p>
-              La passione per i cani è il punto di partenza di tutto quello che faccio. Sto concludendo il percorso ENCI da educatore cinofilo, ma è il lavoro pratico di ogni giorno — sul campo, in strada, dentro casa — che mi forma davvero.
+              Credo che ogni cane abbia esigenze e caratteristiche diverse, per questo ogni percorso viene adattato alla singola situazione, con attenzione sia al benessere dell’animale sia alle necessità della famiglia.
+            </p>
+            <p>
+              L’obiettivo del mio lavoro è aiutare le persone a vivere il proprio cane con maggiore serenità nella quotidianità, migliorando la gestione, la comunicazione e la relazione reciproca.
             </p>
           </div>
           <div className="mt-10 flex flex-wrap gap-3">
-            {["Percorso ENCI in corso", "Esperienza pratica quotidiana", "Approccio basato sulla relazione"].map((t) => (
+            {["Pratica quotidiana", "Approccio basato sulla relazione"].map((t) => (
               <span key={t} className="text-xs uppercase tracking-[0.18em] text-muted-foreground border border-border px-3 py-2 rounded-full">
                 {t}
               </span>
