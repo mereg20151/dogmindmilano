@@ -117,6 +117,7 @@ function Header() {
           </SheetTrigger>
           <SheetContent side="right" className="w-[280px] bg-background border-l border-border">
             <div className="flex flex-col gap-6 mt-8">
+              <img src={logoImg} alt="Dog Mind Milano" className="h-16 w-auto" />
               {nav.map((n) => (
                 <a
                   key={n.href}
