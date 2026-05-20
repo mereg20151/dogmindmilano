@@ -25,7 +25,7 @@ export const Route = createFileRoute("/")({
       { property: "og:description", content: "Sessioni private 1:1 a Milano per costruire un cane equilibrato nella vita di tutti i giorni." },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://dogmindmilano.lovable.app/" },
-      { property: "og:image", content: "https://dogmindmilano.lovable.app/og-cover.jpg" },
+      { property: "og:image", content: "https://dogmindmilano.lovable.app/logo-dog-mind-milano.png" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "theme-color", content: "#0a0a0a" },
     ],
