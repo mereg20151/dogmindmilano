@@ -161,7 +161,7 @@ function Hero() {
           <p className="reveal reveal-delay-2 max-w-xl text-lg md:text-2xl text-muted-foreground leading-relaxed font-light mb-10 text-center mx-auto">
             Educazione di base e gestione quotidiana. Per chi vuole costruire un cane equilibrato nella vita reale di città.
           </p>
-          <div className="reveal reveal-delay-3 flex flex-col sm:flex-row flex-wrap gap-3">
+          <div className="reveal reveal-delay-3 flex flex-col sm:flex-row flex-wrap gap-3 justify-center">
             <a
               href="#contatto"
               className="group inline-flex items-center justify-center gap-3 bg-primary text-primary-foreground px-7 py-4 rounded-full text-xs uppercase tracking-[0.2em] font-bold transition-all hover:-translate-y-0.5 hover:shadow-2xl hover:shadow-primary/30"
