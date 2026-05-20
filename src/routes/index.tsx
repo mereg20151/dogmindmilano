@@ -340,7 +340,8 @@ function Pricing() {
     "A Milano e zone limitrofe",
     "Disponibilità 7 giorni su 7",
     "Programma costruito sulla tua quotidianità",
-    "Materiali e suggerimenti pratici dopo la sessione\n\n",
+    "Materiali e suggerimenti pratici dopo la sessione",
+    "Ogni situazione richiede un approccio diverso: per questo i percorsi vengono personalizzati caso per caso.",
   ];
   return (
     <section id="servizi" className="py-24 md:py-36 bg-surface">
