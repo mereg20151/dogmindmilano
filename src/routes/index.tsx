@@ -1,8 +1,13 @@
+import { useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import {
   Dog, Baby, Building2, Link as LinkIcon, Target, Sparkles,
   Instagram, MessageCircle, Mail, MapPin, Star, ArrowRight, Check,
+  Menu, X,
 } from "lucide-react";
+import {
+  Sheet, SheetTrigger, SheetContent, SheetClose,
+} from "@/components/ui/sheet";
 import heroImg from "@/assets/hero-malinois.jpg";
 import portraitImg from "@/assets/about-portrait.jpg";
 import action1 from "@/assets/action-1.jpg";
@@ -58,6 +63,7 @@ function Home() {
 }
 
 function Header() {
+  const [open, setOpen] = useState(false);
   return (
     <header className="fixed top-0 inset-x-0 z-30 backdrop-blur-md bg-background/70 border-b border-border/50">
       <div className="container-px max-w-7xl mx-auto h-16 flex items-center justify-between">
@@ -78,6 +84,35 @@ function Header() {
         >
           Consulenza
         </a>
+        <Sheet open={open} onOpenChange={setOpen}>
+          <SheetTrigger asChild>
+            <button className="md:hidden inline-flex items-center justify-center p-2 rounded-md text-foreground hover:bg-surface transition-colors">
+              <Menu className="h-6 w-6" />
+              <span className="sr-only">Apri menu</span>
+            </button>
+          </SheetTrigger>
+          <SheetContent side="right" className="w-[280px] bg-background border-l border-border">
+            <div className="flex flex-col gap-6 mt-8">
+              {nav.map((n) => (
+                <a
+                  key={n.href}
+                  href={n.href}
+                  onClick={() => setOpen(false)}
+                  className="text-lg font-medium text-foreground hover:text-accent transition-colors"
+                >
+                  {n.label}
+                </a>
+              ))}
+              <a
+                href="#contatto"
+                onClick={() => setOpen(false)}
+                className="mt-4 inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-4 py-3 rounded-md text-sm font-medium hover:bg-primary/90 transition-all"
+              >
+                Consulenza
+              </a>
+            </div>
+          </SheetContent>
+        </Sheet>
       </div>
     </header>
   );
