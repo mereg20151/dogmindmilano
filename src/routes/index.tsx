@@ -169,12 +169,12 @@ function Hero() {
               <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </a>
             <a
-              href="https://www.instagram.com/"
+              href="https://wa.me/393318165762?text=Ciao%20Sam%2C%20vorrei%20informazioni"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 border border-border text-foreground px-7 py-4 rounded-full text-xs uppercase tracking-[0.2em] font-bold hover:bg-surface-elevated hover:border-foreground/30 transition-all"
             >
-              <Instagram className="h-4 w-4" /> Scrivimi su Instagram
+              <MessageCircle className="h-4 w-4" /> Scrivimi su WhatsApp
             </a>
           </div>
           <div className="reveal reveal-delay-4 mt-14 grid grid-cols-3 gap-6 max-w-lg border-t border-border pt-8">
