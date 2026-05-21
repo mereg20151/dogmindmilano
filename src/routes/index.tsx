@@ -258,7 +258,7 @@ function Target1() {
       <SectionHeader
         kicker="A chi è rivolto"
         title="Per chi è pensato il percorso"
-        sub="Educazione di base e gestione quotidiana, per chi vuole costruire un cane equilibrato nella vita reale di città."
+        sub="Il percorso è rivolto a tutti i proprietari che desiderano migliorare il rapporto con il proprio cane attraverso un’educazione equilibrata, rispettosa e personalizzata. Ogni percorso viene costruito in base alle esigenze del cane e della famiglia, con l’obiettivo di creare una convivenza serena e una comunicazione chiara tra cane e proprietario."
       />
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border rounded-2xl overflow-hidden border border-border">
         {items.map(({ icon: Icon, title, desc }) => (
@@ -301,7 +301,7 @@ function About() {
         <div className="lg:col-span-7">
           <SectionHeader
             kicker=""
-            title="PRIMA CONSULENZA"
+            title={"\n"}
           />
         </div>
       </div>
