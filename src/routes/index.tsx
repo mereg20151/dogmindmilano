@@ -156,7 +156,9 @@ function Hero() {
           aria-hidden="true"
           className="absolute inset-0 w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/50 via-background/30 to-background/80" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/30 via-background/20 to-background" />
+        <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-b from-transparent to-background" />
+
 
       </div>
 
