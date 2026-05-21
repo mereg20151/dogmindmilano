@@ -183,7 +183,7 @@ function Header() {
                     className="flex items-center gap-3 text-foreground hover:text-accent transition-colors"
                   >
                     <Instagram className="h-4 w-4 text-accent" />
-                    <span>@dogmind_milano</span>
+                    <span>Instagram</span>
                   </a>
                   <div className="flex items-center gap-3 text-muted-foreground">
                     <MapPin className="h-4 w-4 text-accent" />
