@@ -396,12 +396,13 @@ function Method() {
 
 function Pricing() {
   const features = [
-    "Sessione di 1 ora",
+    "Prima valutazione da 1 ora a €60",
     "A Milano e zone limitrofe",
     "Disponibilità 7 giorni su 7",
     "Programma costruito sulla tua quotidianità",
     "Materiali e suggerimenti pratici dopo la sessione",
     "Ogni situazione richiede un approccio diverso: per questo i percorsi vengono personalizzati caso per caso.",
+    "Percorsi su misura con condizioni dedicate per chi prosegue",
   ];
   return (
     <section id="servizi" className="py-24 md:py-36 bg-surface">
