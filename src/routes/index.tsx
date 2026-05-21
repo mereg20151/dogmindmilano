@@ -416,12 +416,12 @@ function Pricing() {
             <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-accent text-accent-foreground text-[10px] uppercase tracking-[0.2em] px-3 py-1.5 rounded-full">
               PRIMA CONSULENZA
             </div>
-            <h3 className="font-display text-3xl mb-3">Sessione di educazione</h3>
+            <h3 className="font-display text-3xl mb-3">Prima valutazione</h3>
             <p className="text-sm text-muted-foreground mb-3">
-              Una sessione mirata, costruita sulla tua situazione reale.
+              Un incontro conoscitivo da 1 ora, costruito sulla tua situazione reale. Capiremo insieme il punto di partenza e il percorso più adatto al tuo cane.
             </p>
             <p className="text-sm text-foreground/90 mb-8">
-              Servizio a domicilio su Milano e dintorni
+              Se decidi di proseguire, riservo per te una scontistica dedicata sui percorsi personalizzati — niente pacchetti preconfezionati, solo ciò che serve davvero.
             </p>
             <div className="flex items-baseline gap-2 mb-10">
               <span className="font-display text-7xl whitespace-pre-line">{`€60\n`}</span>
