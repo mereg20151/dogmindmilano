@@ -170,16 +170,8 @@ function Hero() {
           <span className="italic font-light text-accent">finalmente</span> sereno<br />
           in città.
         </h1>
-        <div className="reveal reveal-delay-2 relative mx-auto mb-10 max-w-2xl rounded-3xl overflow-hidden shadow-[0_32px_64px_-16px_rgba(0,0,0,0.25)] bg-surface aspect-[16/10] group">
-          <img
-            src={heroImg}
-            alt="Educatore cinofilo a Milano con Belgian Malinois"
-            loading="eager"
-            className="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-[1200ms] ease-out"
-          />
-          <div className="absolute inset-0 ring-1 ring-inset ring-black/5 rounded-3xl pointer-events-none" />
-        </div>
         <p className="reveal reveal-delay-2 max-w-xl text-lg md:text-2xl text-muted-foreground leading-relaxed font-light mb-10 mx-auto">
+
           Educazione di base e gestione quotidiana. Per chi vuole costruire un cane equilibrato nella vita reale di città.
         </p>
 
