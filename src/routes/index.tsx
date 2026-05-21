@@ -361,7 +361,7 @@ function About() {
         <div className="lg:col-span-7">
           <SectionHeader
             kicker=""
-            title="PRIMA CONSULENZA "
+            title={`\n`}
           />
         </div>
       </div>
