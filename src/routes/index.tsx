@@ -69,8 +69,8 @@ function Home() {
     <div className="min-h-screen bg-background text-foreground pb-24 md:pb-0">
       <Header />
       <Hero />
-      <MilanoBanner />
       <Target1 />
+
 
       <About />
       <Method />
