@@ -396,32 +396,33 @@ function Method() {
 
 function Pricing() {
   const features = [
-    "Sessione di 1 ora",
+    "Prima valutazione da 1 ora a €60",
     "A Milano e zone limitrofe",
     "Disponibilità 7 giorni su 7",
     "Programma costruito sulla tua quotidianità",
     "Materiali e suggerimenti pratici dopo la sessione",
     "Ogni situazione richiede un approccio diverso: per questo i percorsi vengono personalizzati caso per caso.",
+    "Percorsi su misura con condizioni dedicate per chi prosegue",
   ];
   return (
     <section id="servizi" className="py-24 md:py-36 bg-surface">
       <div className="container-px max-w-7xl mx-auto">
         <SectionHeader
           kicker="Servizi e prezzi"
-          title="Un percorso pratico personalizzato."
-          sub="Una formula semplice e trasparente. Costruiamo insieme il numero di sessioni adatto al tuo cane."
+          title="Un percorso su misura, non un pacchetto."
+          sub="La prima valutazione è €60: un incontro per capire insieme dove partire. Se proseguiamo, riservo per te condizioni dedicate — perché ogni cane merita un approccio personale, costruito passo dopo passo."
         />
         <div className="max-w-2xl mx-auto">
           <div className="relative rounded-2xl p-10 md:p-14 border border-accent bg-background shadow-2xl shadow-accent/10 transition-all duration-500 hover:-translate-y-1">
             <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-accent text-accent-foreground text-[10px] uppercase tracking-[0.2em] px-3 py-1.5 rounded-full">
               PRIMA CONSULENZA
             </div>
-            <h3 className="font-display text-3xl mb-3">Sessione di educazione</h3>
+            <h3 className="font-display text-3xl mb-3">Prima valutazione</h3>
             <p className="text-sm text-muted-foreground mb-3">
-              Una sessione mirata, costruita sulla tua situazione reale.
+              Un incontro conoscitivo da 1 ora, costruito sulla tua situazione reale. Capiremo insieme il punto di partenza e il percorso più adatto al tuo cane.
             </p>
             <p className="text-sm text-foreground/90 mb-8">
-              Servizio a domicilio su Milano e dintorni
+              Se decidi di proseguire, riservo per te una scontistica dedicata sui percorsi personalizzati — niente pacchetti preconfezionati, solo ciò che serve davvero.
             </p>
             <div className="flex items-baseline gap-2 mb-10">
               <span className="font-display text-7xl whitespace-pre-line">{`€60\n`}</span>
@@ -439,7 +440,7 @@ function Pricing() {
               href="#contatto"
               className="block text-center w-full py-3.5 rounded-md text-sm font-medium bg-accent text-accent-foreground hover:bg-accent/90 transition-all"
             >
-              Richiedi una consulenza
+              Inizia con la prima valutazione
             </a>
           </div>
         </div>
