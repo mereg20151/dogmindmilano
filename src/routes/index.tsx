@@ -154,9 +154,10 @@ function Hero() {
           src={heroImg}
           alt=""
           aria-hidden="true"
-          className="absolute inset-0 w-full h-full object-cover scale-110 blur-lg opacity-70"
+          className="absolute inset-0 w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/40 to-background" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/50 via-background/30 to-background/80" />
+
       </div>
 
 
