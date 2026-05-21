@@ -421,7 +421,7 @@ function Pricing() {
             <p className="text-sm text-muted-foreground mb-3">
               Un incontro conoscitivo da 1 ora, costruito sulla tua situazione reale. Capiremo insieme il punto di partenza e il percorso più adatto al tuo cane.
             </p>
-            <p className="text-sm text-foreground/90 mb-8">
+            <p className="text-sm text-muted-foreground mb-8">
               La prima valutazione è €60: un incontro per capire insieme dove partire. Se proseguiamo, riservo per te condizioni dedicate perché ogni cane merita un approccio personale, costruito passo dopo passo.
             </p>
             <div className="flex items-baseline gap-2 mb-10">
