@@ -169,15 +169,16 @@ function Hero() {
           <span className="text-[10px] uppercase tracking-[0.35em] font-bold text-muted-foreground">Educazione cinofila · Milano</span>
           <div className="h-px w-12 bg-accent" />
         </div>
-        <h1 className="reveal reveal-delay-1 font-display text-5xl sm:text-6xl md:text-8xl lg:text-[7.5rem] leading-[0.9] tracking-tight text-foreground mb-10">
+        <h1 className="reveal reveal-delay-1 font-display text-5xl sm:text-6xl md:text-8xl lg:text-[7.5rem] leading-[0.9] tracking-tight text-foreground mb-10 [text-shadow:0_2px_24px_rgba(0,0,0,0.35)]">
           Il tuo cane,<br />
           <span className="italic font-light text-accent">finalmente</span> sereno<br />
           in città.
         </h1>
-        <p className="reveal reveal-delay-2 max-w-xl text-lg md:text-2xl text-muted-foreground leading-relaxed font-light mb-10 mx-auto">
+        <p className="reveal reveal-delay-2 max-w-xl text-lg md:text-2xl text-foreground/90 leading-relaxed font-light mb-10 mx-auto [text-shadow:0_1px_12px_rgba(0,0,0,0.3)]">
 
           Educazione di base e gestione quotidiana. Per chi vuole costruire un cane equilibrato nella vita reale di città.
         </p>
+
 
         <div className="reveal reveal-delay-3 flex flex-col sm:flex-row flex-wrap gap-3 justify-center">
           <a
