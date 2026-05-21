@@ -165,15 +165,15 @@ function Header() {
                     className="flex items-center gap-3 text-foreground hover:text-accent transition-colors"
                   >
                     <MessageCircle className="h-4 w-4 text-accent" />
-                    <span>+39 331 816 5762</span>
+                    <span>WhatsApp</span>
                   </a>
                   <a
                     href="mailto:dogmindmilano@gmail.com"
                     onClick={() => setOpen(false)}
-                    className="flex items-center gap-3 text-foreground hover:text-accent transition-colors break-all"
+                    className="flex items-center gap-3 text-foreground hover:text-accent transition-colors"
                   >
                     <Mail className="h-4 w-4 text-accent shrink-0" />
-                    <span>dogmindmilano@gmail.com</span>
+                    <span>Email</span>
                   </a>
                   <a
                     href="https://www.instagram.com/dogmind_milano?igsh=MW1kZ2RqMzN3aXl5Mg%3D%3D&utm_source=qr"
@@ -468,13 +468,13 @@ function FormSection() {
           rel="noopener noreferrer"
           className="inline-flex items-center justify-center gap-2 flex-1 border border-border rounded-md px-5 py-3.5 text-sm text-foreground hover:bg-surface transition-colors"
         >
-          <MessageCircle className="h-4 w-4 text-accent" /> +39 331 8165762
+          <MessageCircle className="h-4 w-4 text-accent" /> WhatsApp
         </a>
         <a
           href="mailto:dogmindmilano@gmail.com"
           className="inline-flex items-center justify-center gap-2 flex-1 border border-border rounded-md px-5 py-3.5 text-sm text-foreground hover:bg-surface transition-colors"
         >
-          <Mail className="h-4 w-4 text-accent" /> dogmindmilano@gmail.com
+          <Mail className="h-4 w-4 text-accent" /> Email
         </a>
       </div>
       <MultiStepForm />
@@ -571,8 +571,8 @@ function Footer() {
         <div>
           <div className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-4">Contatti</div>
           <ul className="space-y-3 text-sm">
-            <li><a href="https://wa.me/393318165762" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-foreground hover:text-accent transition-colors"><MessageCircle className="h-4 w-4" /> +39 331 8165762</a></li>
-            <li><a href="mailto:dogmindmilano@gmail.com" className="inline-flex items-center gap-2 text-foreground hover:text-accent transition-colors"><Mail className="h-4 w-4" /> dogmindmilano@gmail.com</a></li>
+            <li><a href="https://wa.me/393318165762" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-foreground hover:text-accent transition-colors"><MessageCircle className="h-4 w-4" /> WhatsApp</a></li>
+            <li><a href="mailto:dogmindmilano@gmail.com" className="inline-flex items-center gap-2 text-foreground hover:text-accent transition-colors"><Mail className="h-4 w-4" /> Email</a></li>
             <li><a href="https://www.instagram.com/dogmind_milano?igsh=MW1kZ2RqMzN3aXl5Mg%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-foreground hover:text-accent transition-colors"><Instagram className="h-4 w-4" /> Instagram</a></li>
           </ul>
         </div>
