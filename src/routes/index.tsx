@@ -146,92 +146,71 @@ function Header() {
 function Hero() {
   return (
     <section id="top" className="relative min-h-screen flex items-center px-6 md:px-12 pt-32 pb-24 md:pt-40 md:pb-32 overflow-hidden bg-background">
-      <div className="max-w-7xl mx-auto w-full grid md:grid-cols-12 gap-12 lg:gap-20 items-center relative z-10">
-        <div className="md:col-span-7">
-          <div className="reveal flex items-center justify-center gap-4 mb-8">
-            <div className="h-px w-12 bg-accent" />
-            <span className="text-[10px] uppercase tracking-[0.35em] font-bold text-muted-foreground">Educazione cinofila · Milano</span>
-            <div className="h-px w-12 bg-accent" />
-          </div>
-          <h1 className="reveal reveal-delay-1 font-display text-5xl sm:text-6xl md:text-8xl lg:text-[7.5rem] leading-[0.9] tracking-tight text-foreground mb-8 text-center">
-            Il tuo cane,<br />
-            <span className="italic font-light text-accent">finalmente</span> sereno<br />
-            in città.
-          </h1>
-          <p className="reveal reveal-delay-2 max-w-xl text-lg md:text-2xl text-muted-foreground leading-relaxed font-light mb-10 text-center mx-auto">
-            Educazione di base e gestione quotidiana. Per chi vuole costruire un cane equilibrato nella vita reale di città.
-          </p>
-          <div className="reveal reveal-delay-3 flex flex-col sm:flex-row flex-wrap gap-3 justify-center">
-            <a
-              href="#contatto"
-              className="group inline-flex items-center justify-center gap-3 bg-primary text-primary-foreground px-7 py-4 rounded-full text-xs uppercase tracking-[0.2em] font-bold transition-all hover:-translate-y-0.5 hover:shadow-2xl hover:shadow-primary/30"
-            >
-              PRENOTA LA PRIMA CONSULENZA
-              <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
-            </a>
-            <a
-              href="https://wa.me/393318165762?text=Ciao%20Sam%2C%20vorrei%20informazioni"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 border border-border text-foreground px-7 py-4 rounded-full text-xs uppercase tracking-[0.2em] font-bold hover:bg-surface-elevated hover:border-foreground/30 transition-all"
-            >
-              <MessageCircle className="h-4 w-4" /> Scrivimi su WhatsApp
-            </a>
-          </div>
-          <div className="reveal reveal-delay-4 mt-14 grid grid-cols-3 gap-6 max-w-lg border-t border-border pt-8">
-            <div>
-              <div className="font-display text-3xl text-foreground">120+</div>
-              <div className="text-[10px] uppercase tracking-[0.18em] text-muted-foreground mt-1">Sessioni svolte</div>
-            </div>
-            <div>
-              <div className="font-display text-3xl text-foreground">48h</div>
-              <div className="text-[10px] uppercase tracking-[0.18em] text-muted-foreground mt-1">Risposta garantita</div>
-            </div>
-            <div>
-              <div className="font-display text-3xl text-foreground">ENCI</div>
-              <div className="text-[10px] uppercase tracking-[0.18em] text-muted-foreground mt-1">Percorso in corso</div>
-            </div>
-          </div>
-        </div>
+      {/* Blurred background image */}
+      <div className="absolute inset-0 z-0 pointer-events-none">
+        <img
+          src={heroImg}
+          alt=""
+          aria-hidden="true"
+          className="absolute inset-0 w-full h-full object-cover scale-110 blur-2xl opacity-40"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/60 to-background" />
+      </div>
 
-        <div className="md:col-span-5 relative">
-          <div className="relative rounded-3xl overflow-hidden shadow-[0_32px_64px_-16px_rgba(0,0,0,0.18)] bg-surface aspect-[3/4] group">
-            <img
-              src={heroImg}
-              alt="Educatore cinofilo a Milano con Belgian Malinois"
-              width={1024}
-              height={1365}
-              loading="eager"
-              className="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-[1200ms] ease-out"
-            />
-            <div className="absolute inset-0 ring-1 ring-inset ring-black/5 rounded-3xl pointer-events-none" />
-            <div className="absolute bottom-4 left-4 right-4 flex items-center gap-2 text-[10px] uppercase tracking-[0.2em] text-white/90 bg-black/30 backdrop-blur-md rounded-full px-4 py-2.5">
-              <span className="h-1.5 w-1.5 rounded-full bg-accent animate-pulse" />
-              Disponibile · prossime sessioni questa settimana
-            </div>
+      <div className="max-w-5xl mx-auto w-full relative z-10 text-center">
+        <div className="reveal flex items-center justify-center gap-4 mb-8">
+          <div className="h-px w-12 bg-accent" />
+          <span className="text-[10px] uppercase tracking-[0.35em] font-bold text-muted-foreground">Educazione cinofila · Milano</span>
+          <div className="h-px w-12 bg-accent" />
+        </div>
+        <h1 className="reveal reveal-delay-1 font-display text-5xl sm:text-6xl md:text-8xl lg:text-[7.5rem] leading-[0.9] tracking-tight text-foreground mb-8">
+          Il tuo cane,<br />
+          <span className="italic font-light text-accent">finalmente</span> sereno<br />
+          in città.
+        </h1>
+        <p className="reveal reveal-delay-2 max-w-xl text-lg md:text-2xl text-muted-foreground leading-relaxed font-light mb-10 mx-auto">
+          Educazione di base e gestione quotidiana. Per chi vuole costruire un cane equilibrato nella vita reale di città.
+        </p>
+        <div className="reveal reveal-delay-3 flex flex-col sm:flex-row flex-wrap gap-3 justify-center">
+          <a
+            href="#contatto"
+            className="group inline-flex items-center justify-center gap-3 bg-primary text-primary-foreground px-7 py-4 rounded-full text-xs uppercase tracking-[0.2em] font-bold transition-all hover:-translate-y-0.5 hover:shadow-2xl hover:shadow-primary/30"
+          >
+            PRENOTA LA PRIMA CONSULENZA
+            <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+          </a>
+          <a
+            href="https://wa.me/393318165762?text=Ciao%20Sam%2C%20vorrei%20informazioni"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-2 border border-border text-foreground px-7 py-4 rounded-full text-xs uppercase tracking-[0.2em] font-bold hover:bg-surface-elevated hover:border-foreground/30 transition-all"
+          >
+            <MessageCircle className="h-4 w-4" /> Scrivimi su WhatsApp
+          </a>
+        </div>
+        <div className="reveal reveal-delay-4 mt-14 grid grid-cols-3 gap-6 max-w-lg mx-auto border-t border-border pt-8">
+          <div>
+            <div className="font-display text-3xl text-foreground">120+</div>
+            <div className="text-[10px] uppercase tracking-[0.18em] text-muted-foreground mt-1">Sessioni svolte</div>
           </div>
-          <div className="hidden md:flex absolute -bottom-6 -right-6 w-32 h-32 rounded-full bg-background shadow-xl items-center justify-center p-4 border border-border">
-            <svg viewBox="0 0 100 100" className="w-full h-full animate-[spin_14s_linear_infinite] text-muted-foreground">
-              <path id="dmm-textpath" d="M 50,50 m -37,0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="none" />
-              <text fontSize="11" fontWeight="600" className="uppercase tracking-[0.1em] fill-current">
-                <textPath href="#dmm-textpath">• Dog Mind Milano • Educazione Cinofila </textPath>
-              </text>
-            </svg>
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="w-10 h-10 rounded-full bg-accent flex items-center justify-center">
-                <Dog className="h-5 w-5 text-accent-foreground" strokeWidth={1.6} />
-              </div>
-            </div>
+          <div>
+            <div className="font-display text-3xl text-foreground">48h</div>
+            <div className="text-[10px] uppercase tracking-[0.18em] text-muted-foreground mt-1">Risposta garantita</div>
+          </div>
+          <div>
+            <div className="font-display text-3xl text-foreground">ENCI</div>
+            <div className="text-[10px] uppercase tracking-[0.18em] text-muted-foreground mt-1">Percorso in corso</div>
           </div>
         </div>
       </div>
 
-      <div className="absolute bottom-0 left-0 p-12 opacity-[0.04] pointer-events-none select-none">
+      <div className="absolute bottom-0 left-0 p-12 opacity-[0.04] pointer-events-none select-none z-0">
         <span className="font-display text-[20vw] leading-none whitespace-nowrap">MILANO</span>
       </div>
     </section>
   );
 }
+
 
 
 function SectionHeader({ kicker, title, sub }: { kicker: string; title: string; sub?: string }) {
