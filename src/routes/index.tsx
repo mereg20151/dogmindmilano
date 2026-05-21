@@ -440,7 +440,7 @@ function Pricing() {
               href="#contatto"
               className="block text-center w-full py-3.5 rounded-md text-sm font-medium bg-accent text-accent-foreground hover:bg-accent/90 transition-all"
             >
-              Richiedi una consulenza
+              Inizia con la prima valutazione
             </a>
           </div>
         </div>
