@@ -424,8 +424,8 @@ function Pricing() {
               Servizio a domicilio su Milano e dintorni
             </p>
             <div className="flex items-baseline gap-2 mb-10">
-              <span className="font-display text-7xl">€60</span>
-              <span className="text-base text-muted-foreground">/ora</span>
+              <span className="font-display text-7xl whitespace-pre-line">{`€60\n`}</span>
+              <span className="text-base text-muted-foreground whitespace-pre-line">{`/ora \n`}</span>
             </div>
             <ul className="space-y-3 mb-10">
               {features.map((f) => (
