@@ -213,13 +213,20 @@ function Hero() {
           </div>
         </div>
       </div>
-
-      <div className="absolute bottom-0 left-0 p-12 opacity-[0.04] pointer-events-none select-none z-0">
-        <span className="font-display text-[20vw] leading-none whitespace-nowrap">MILANO</span>
-      </div>
     </section>
   );
 }
+
+function MilanoBanner() {
+  return (
+    <div className="relative w-full overflow-hidden py-6 md:py-10 select-none pointer-events-none">
+      <span className="block font-display text-[28vw] leading-none whitespace-nowrap text-foreground/[0.06] text-center tracking-tight">
+        MILANO
+      </span>
+    </div>
+  );
+}
+
 
 
 
