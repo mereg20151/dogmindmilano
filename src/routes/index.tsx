@@ -117,28 +117,93 @@ function Header() {
               <span className="sr-only">Apri menu</span>
             </button>
           </SheetTrigger>
-          <SheetContent side="right" className="w-[280px] bg-background border-l border-border">
-            <div className="flex flex-col gap-6 mt-8">
-              {nav.map((n) => (
-                <a
-                  key={n.href}
-                  href={n.href}
-                  onClick={() => setOpen(false)}
-                  className="text-lg font-medium text-foreground hover:text-accent transition-colors"
-                >
-                  {n.label}
-                </a>
-              ))}
+          <SheetContent side="right" className="w-[320px] sm:w-[380px] bg-background border-l border-border p-0 flex flex-col">
+            {/* Header tendina */}
+            <div className="flex items-center gap-3 px-6 pt-6 pb-5 border-b border-border">
+              <img src={logoImg} alt="Dog Mind Milano" className="h-10 w-auto" />
+              <div className="flex flex-col leading-none">
+                <span className="font-display text-base text-foreground">Dog Mind</span>
+                <span className="text-[9px] uppercase tracking-[0.25em] text-muted-foreground font-semibold mt-1">Milano</span>
+              </div>
+            </div>
+
+            {/* Navigazione */}
+            <nav className="flex-1 overflow-y-auto px-6 py-6">
+              <span className="block text-[10px] uppercase tracking-[0.3em] font-bold text-muted-foreground mb-4">Menu</span>
+              <div className="flex flex-col">
+                {nav.map((n) => (
+                  <a
+                    key={n.href}
+                    href={n.href}
+                    onClick={() => setOpen(false)}
+                    className="group flex items-center justify-between py-3.5 border-b border-border/60 font-display text-xl text-foreground hover:text-accent transition-colors"
+                  >
+                    <span>{n.label}</span>
+                    <ArrowRight className="h-4 w-4 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all" />
+                  </a>
+                ))}
+              </div>
+
               <a
                 href="#contatto"
                 onClick={() => setOpen(false)}
-                className="mt-4 inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-4 py-3 rounded-full text-xs font-bold uppercase tracking-[0.2em] hover:brightness-110 transition-all"
+                className="mt-6 w-full inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-4 py-3.5 rounded-full text-xs font-bold uppercase tracking-[0.2em] hover:brightness-110 transition-all"
               >
-                Consulenza
+                Prenota consulenza
+                <ArrowRight className="h-4 w-4" />
               </a>
-              <img src={logoImg} alt="Dog Mind Milano" className="h-20 w-auto object-contain self-center shrink-1 opacity-70 mt-6" />
+
+              {/* Contatti */}
+              <div className="mt-8">
+                <span className="block text-[10px] uppercase tracking-[0.3em] font-bold text-muted-foreground mb-4">Contatti</span>
+                <div className="flex flex-col gap-3 text-sm">
+                  <a
+                    href="https://wa.me/393318165762?text=Ciao%20Sam%2C%20vorrei%20informazioni"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setOpen(false)}
+                    className="flex items-center gap-3 text-foreground hover:text-accent transition-colors"
+                  >
+                    <MessageCircle className="h-4 w-4 text-accent" />
+                    <span>+39 331 816 5762</span>
+                  </a>
+                  <a
+                    href="mailto:dogmindmilano@gmail.com"
+                    onClick={() => setOpen(false)}
+                    className="flex items-center gap-3 text-foreground hover:text-accent transition-colors break-all"
+                  >
+                    <Mail className="h-4 w-4 text-accent shrink-0" />
+                    <span>dogmindmilano@gmail.com</span>
+                  </a>
+                  <a
+                    href="https://instagram.com/dogmindmilano"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setOpen(false)}
+                    className="flex items-center gap-3 text-foreground hover:text-accent transition-colors"
+                  >
+                    <Instagram className="h-4 w-4 text-accent" />
+                    <span>@dogmindmilano</span>
+                  </a>
+                  <div className="flex items-center gap-3 text-muted-foreground">
+                    <MapPin className="h-4 w-4 text-accent" />
+                    <span>Milano e provincia</span>
+                  </div>
+                </div>
+              </div>
+            </nav>
+
+            {/* Footer tendina */}
+            <div className="px-6 py-5 border-t border-border bg-surface/40">
+              <p className="text-[10px] uppercase tracking-[0.25em] font-bold text-muted-foreground">
+                Educazione cinofila · Milano
+              </p>
+              <p className="text-[11px] text-muted-foreground/80 mt-2">
+                © {new Date().getFullYear()} Dog Mind Milano
+              </p>
             </div>
           </SheetContent>
+
         </Sheet>
       </div>
     </header>
