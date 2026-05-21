@@ -69,7 +69,9 @@ function Home() {
     <div className="min-h-screen bg-background text-foreground pb-24 md:pb-0">
       <Header />
       <Hero />
+      <MilanoBanner />
       <Target1 />
+
       <About />
       <Method />
       <Pricing />
@@ -163,14 +165,24 @@ function Hero() {
           <span className="text-[10px] uppercase tracking-[0.35em] font-bold text-muted-foreground">Educazione cinofila · Milano</span>
           <div className="h-px w-12 bg-accent" />
         </div>
-        <h1 className="reveal reveal-delay-1 font-display text-5xl sm:text-6xl md:text-8xl lg:text-[7.5rem] leading-[0.9] tracking-tight text-foreground mb-8">
+        <h1 className="reveal reveal-delay-1 font-display text-5xl sm:text-6xl md:text-8xl lg:text-[7.5rem] leading-[0.9] tracking-tight text-foreground mb-10">
           Il tuo cane,<br />
           <span className="italic font-light text-accent">finalmente</span> sereno<br />
           in città.
         </h1>
+        <div className="reveal reveal-delay-2 relative mx-auto mb-10 max-w-2xl rounded-3xl overflow-hidden shadow-[0_32px_64px_-16px_rgba(0,0,0,0.25)] bg-surface aspect-[16/10] group">
+          <img
+            src={heroImg}
+            alt="Educatore cinofilo a Milano con Belgian Malinois"
+            loading="eager"
+            className="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-[1200ms] ease-out"
+          />
+          <div className="absolute inset-0 ring-1 ring-inset ring-black/5 rounded-3xl pointer-events-none" />
+        </div>
         <p className="reveal reveal-delay-2 max-w-xl text-lg md:text-2xl text-muted-foreground leading-relaxed font-light mb-10 mx-auto">
           Educazione di base e gestione quotidiana. Per chi vuole costruire un cane equilibrato nella vita reale di città.
         </p>
+
         <div className="reveal reveal-delay-3 flex flex-col sm:flex-row flex-wrap gap-3 justify-center">
           <a
             href="#contatto"
@@ -203,13 +215,20 @@ function Hero() {
           </div>
         </div>
       </div>
-
-      <div className="absolute bottom-0 left-0 p-12 opacity-[0.04] pointer-events-none select-none z-0">
-        <span className="font-display text-[20vw] leading-none whitespace-nowrap">MILANO</span>
-      </div>
     </section>
   );
 }
+
+function MilanoBanner() {
+  return (
+    <div className="relative w-full overflow-hidden py-6 md:py-10 select-none pointer-events-none">
+      <span className="block font-display text-[28vw] leading-none whitespace-nowrap text-foreground/[0.06] text-center tracking-tight">
+        MILANO
+      </span>
+    </div>
+  );
+}
+
 
 
 
