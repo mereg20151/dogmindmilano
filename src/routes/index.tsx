@@ -408,8 +408,8 @@ function Pricing() {
       <div className="container-px max-w-7xl mx-auto">
         <SectionHeader
           kicker="Servizi e prezzi"
-          title="Un percorso pratico personalizzato."
-          sub="Una formula semplice e trasparente. Costruiamo insieme il numero di sessioni adatto al tuo cane."
+          title="Un percorso su misura, non un pacchetto."
+          sub="La prima valutazione è €60: un incontro per capire insieme dove partire. Se proseguiamo, riservo per te condizioni dedicate — perché ogni cane merita un approccio personale, costruito passo dopo passo."
         />
         <div className="max-w-2xl mx-auto">
           <div className="relative rounded-2xl p-10 md:p-14 border border-accent bg-background shadow-2xl shadow-accent/10 transition-all duration-500 hover:-translate-y-1">
