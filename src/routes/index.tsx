@@ -512,7 +512,7 @@ function Footer() {
           <ul className="space-y-3 text-sm">
             <li><a href="https://wa.me/393318165762" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-foreground hover:text-accent transition-colors"><MessageCircle className="h-4 w-4" /> +39 331 8165762</a></li>
             <li><a href="mailto:dogmindmilano@gmail.com" className="inline-flex items-center gap-2 text-foreground hover:text-accent transition-colors"><Mail className="h-4 w-4" /> dogmindmilano@gmail.com</a></li>
-            <li><a href="#" className="inline-flex items-center gap-2 text-foreground hover:text-accent transition-colors"><Instagram className="h-4 w-4" /> Instagram</a></li>
+            <li><a href="https://www.instagram.com/dogmind_milano?igsh=MW1kZ2RqMzN3aXl5Mg%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-foreground hover:text-accent transition-colors"><Instagram className="h-4 w-4" /> Instagram</a></li>
           </ul>
         </div>
         <div>
