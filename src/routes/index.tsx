@@ -154,10 +154,11 @@ function Hero() {
           src={heroImg}
           alt=""
           aria-hidden="true"
-          className="absolute inset-0 w-full h-full object-cover scale-110 blur-2xl opacity-40"
+          className="absolute inset-0 w-full h-full object-cover scale-110 blur-xl opacity-60"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/60 to-background" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/40 to-background" />
       </div>
+
 
       <div className="max-w-5xl mx-auto w-full relative z-10 text-center">
         <div className="reveal flex items-center justify-center gap-4 mb-8">
