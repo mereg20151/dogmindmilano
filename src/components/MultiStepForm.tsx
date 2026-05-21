@@ -6,42 +6,48 @@ type Data = {
   telefono: string;
   email: string;
   zona: string;
+  contatto: string;
   nomeCane: string;
   eta: string;
   razza: string;
+  sesso: string;
+  intero: string;
   difficolta: string[];
-  morso: string;
-  reagisceP: string;
-  reagisceC: string;
-  gravita: number;
-  messaggio: string;
+  daQuanto: string;
+  daQuantoNum: string;
+  educatore: string;
+  obiettivo: string;
 };
 
 const initial: Data = {
-  nome: "", telefono: "", email: "", zona: "",
-  nomeCane: "", eta: "", razza: "",
+  nome: "", telefono: "", email: "", zona: "", contatto: "",
+  nomeCane: "", eta: "", razza: "", sesso: "", intero: "",
   difficolta: [],
-  morso: "", reagisceP: "", reagisceC: "",
-  gravita: 3,
-  messaggio: "",
+  daQuanto: "", daQuantoNum: "",
+  educatore: "",
+  obiettivo: "",
 };
 
 const difficoltaOpts = [
   "Tira al guinzaglio",
   "Richiamo",
   "Eccessiva eccitazione",
-  "Difficoltà di focus",
+  "Abbaia troppo",
+  "Aggressività",
+  "Problemi con altri cani",
   "Gestione urbana",
   "Educazione cucciolo",
   "Altro",
 ];
+
+const daQuantoOpts = ["Da poco", "Da qualche mese", "Da più di un anno"];
 
 export function MultiStepForm() {
   const [step, setStep] = useState(0);
   const [data, setData] = useState<Data>(initial);
   const [submitted, setSubmitted] = useState(false);
 
-  const totalSteps = 6;
+  const totalSteps = 5;
   const progress = ((step + 1) / totalSteps) * 100;
 
   const update = <K extends keyof Data>(k: K, v: Data[K]) =>
@@ -57,12 +63,11 @@ export function MultiStepForm() {
   };
 
   const canNext = () => {
-    if (step === 0) return data.nome && data.telefono && data.email && data.zona;
-    if (step === 1) return data.nomeCane && data.eta && data.razza;
+    if (step === 0) return data.nome && data.telefono && data.email && data.zona && data.contatto;
+    if (step === 1) return data.nomeCane && data.eta && data.razza && data.sesso && data.intero;
     if (step === 2) return data.difficolta.length > 0;
-    if (step === 3) return data.morso && data.reagisceP && data.reagisceC;
-    if (step === 4) return true;
-    if (step === 5) return data.messaggio.length > 5;
+    if (step === 3) return data.daQuanto && data.educatore;
+    if (step === 4) return data.obiettivo.length > 5;
     return false;
   };
 
@@ -97,6 +102,28 @@ export function MultiStepForm() {
   const inputCls =
     "w-full bg-transparent border-b border-border px-0 py-3 text-foreground placeholder:text-muted-foreground/60 focus:outline-none focus:border-accent transition-colors";
 
+  const Pill = ({
+    active,
+    onClick,
+    children,
+  }: {
+    active: boolean;
+    onClick: () => void;
+    children: React.ReactNode;
+  }) => (
+    <button
+      type="button"
+      onClick={onClick}
+      className={`px-4 py-2 rounded-md text-sm border transition-all ${
+        active
+          ? "border-accent bg-accent/15 text-foreground"
+          : "border-border hover:border-foreground/40 text-muted-foreground"
+      }`}
+    >
+      {children}
+    </button>
+  );
+
   return (
     <form onSubmit={submit} className="rounded-2xl border border-border bg-surface p-6 md:p-10">
       {/* progress */}
@@ -129,13 +156,21 @@ export function MultiStepForm() {
             <Field label="Zona di Milano">
               <input className={inputCls} value={data.zona} onChange={(e) => update("zona", e.target.value)} placeholder="Es. Porta Romana" />
             </Field>
+            <div className="md:col-span-2">
+              <span className="block text-xs uppercase tracking-[0.18em] text-muted-foreground mb-3">Come preferisci essere contattato</span>
+              <div className="flex flex-wrap gap-2">
+                {["WhatsApp", "Telefono", "Email"].map((v) => (
+                  <Pill key={v} active={data.contatto === v} onClick={() => update("contatto", v)}>{v}</Pill>
+                ))}
+              </div>
+            </div>
           </div>
         )}
 
         {step === 1 && (
           <div key="s1" className="reveal grid gap-6 md:grid-cols-3">
             <h3 className="md:col-span-3 font-display text-2xl mb-2">Il tuo cane</h3>
-            <Field label="Nome del cane">
+            <Field label="Nome">
               <input className={inputCls} value={data.nomeCane} onChange={(e) => update("nomeCane", e.target.value)} />
             </Field>
             <Field label="Età">
@@ -144,6 +179,24 @@ export function MultiStepForm() {
             <Field label="Razza">
               <input className={inputCls} value={data.razza} onChange={(e) => update("razza", e.target.value)} />
             </Field>
+            <div className="md:col-span-3 grid sm:grid-cols-2 gap-6">
+              <div>
+                <span className="block text-xs uppercase tracking-[0.18em] text-muted-foreground mb-3">Sesso</span>
+                <div className="flex gap-2">
+                  {["Maschio", "Femmina"].map((v) => (
+                    <Pill key={v} active={data.sesso === v} onClick={() => update("sesso", v)}>{v}</Pill>
+                  ))}
+                </div>
+              </div>
+              <div>
+                <span className="block text-xs uppercase tracking-[0.18em] text-muted-foreground mb-3">Intero / sterilizzato</span>
+                <div className="flex gap-2">
+                  {["Intero/a", "Sterilizzato/a"].map((v) => (
+                    <Pill key={v} active={data.intero === v} onClick={() => update("intero", v)}>{v}</Pill>
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
         )}
 
@@ -174,68 +227,46 @@ export function MultiStepForm() {
         )}
 
         {step === 3 && (
-          <div key="s3" className="reveal space-y-6">
-            <h3 className="font-display text-2xl mb-2">Alcune domande importanti</h3>
-            {[
-              { k: "morso" as const, q: "Il cane ha mai morso qualcuno?" },
-              { k: "reagisceP" as const, q: "Reagisce fortemente alle persone?" },
-              { k: "reagisceC" as const, q: "Reagisce fortemente ad altri cani?" },
-            ].map(({ k, q }) => (
-              <div key={k} className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 py-3 border-b border-border">
-                <span className="text-sm text-foreground">{q}</span>
-                <div className="flex gap-2">
-                  {["Sì", "No"].map((v) => (
-                    <button
-                      type="button"
-                      key={v}
-                      onClick={() => update(k, v)}
-                      className={`px-5 py-2 rounded-md text-sm border transition-all ${
-                        data[k] === v
-                          ? "border-accent bg-accent/15 text-foreground"
-                          : "border-border hover:border-foreground/40 text-muted-foreground"
-                      }`}
-                    >
-                      {v}
-                    </button>
-                  ))}
-                </div>
+          <div key="s3" className="reveal space-y-8">
+            <div>
+              <h3 className="font-display text-2xl mb-2">Da quanto tempo c'è il problema?</h3>
+              <div className="flex flex-wrap gap-2 mb-4">
+                {daQuantoOpts.map((v) => (
+                  <Pill key={v} active={data.daQuanto === v} onClick={() => update("daQuanto", v)}>{v}</Pill>
+                ))}
               </div>
-            ))}
+              <Field label="Quanto esattamente (in mesi)">
+                <input
+                  className={inputCls}
+                  value={data.daQuantoNum}
+                  onChange={(e) => update("daQuantoNum", e.target.value)}
+                  placeholder="Es. 6"
+                  inputMode="numeric"
+                />
+              </Field>
+            </div>
+            <div className="pt-2 border-t border-border">
+              <span className="block text-xs uppercase tracking-[0.18em] text-muted-foreground mb-3 mt-4">
+                Hai già lavorato con un educatore?
+              </span>
+              <div className="flex gap-2">
+                {["Sì", "No"].map((v) => (
+                  <Pill key={v} active={data.educatore === v} onClick={() => update("educatore", v)}>{v}</Pill>
+                ))}
+              </div>
+            </div>
           </div>
         )}
 
         {step === 4 && (
           <div key="s4" className="reveal">
-            <h3 className="font-display text-2xl mb-2">Quanto ritieni grave la situazione?</h3>
-            <p className="text-sm text-muted-foreground mb-8">1 = poco · 5 = molto</p>
-            <div className="flex justify-between gap-2">
-              {[1, 2, 3, 4, 5].map((n) => (
-                <button
-                  type="button"
-                  key={n}
-                  onClick={() => update("gravita", n)}
-                  className={`flex-1 aspect-square rounded-lg border text-lg font-display transition-all ${
-                    data.gravita === n
-                      ? "border-accent bg-accent/15 text-foreground scale-105"
-                      : "border-border hover:border-foreground/40 text-muted-foreground"
-                  }`}
-                >
-                  {n}
-                </button>
-              ))}
-            </div>
-          </div>
-        )}
-
-        {step === 5 && (
-          <div key="s5" className="reveal">
-            <h3 className="font-display text-2xl mb-2">Descrivi brevemente la situazione</h3>
-            <p className="text-sm text-muted-foreground mb-6">Più dettagli mi dai, meglio posso aiutarti.</p>
+            <h3 className="font-display text-2xl mb-2">Cosa vorresti migliorare?</h3>
+            <p className="text-sm text-muted-foreground mb-6">Due righe bastano. Più sei chiaro, meglio posso aiutarti.</p>
             <textarea
-              className="w-full bg-transparent border border-border rounded-lg px-4 py-3 text-foreground placeholder:text-muted-foreground/60 focus:outline-none focus:border-accent transition-colors min-h-[160px]"
-              value={data.messaggio}
-              onChange={(e) => update("messaggio", e.target.value)}
-              placeholder="Racconta com'è la vostra giornata tipo, cosa hai già provato…"
+              className="w-full bg-transparent border border-border rounded-lg px-4 py-3 text-foreground placeholder:text-muted-foreground/60 focus:outline-none focus:border-accent transition-colors min-h-[140px]"
+              value={data.obiettivo}
+              onChange={(e) => update("obiettivo", e.target.value)}
+              placeholder="Es. Camminare rilassati in città e avere un richiamo affidabile…"
             />
           </div>
         )}
