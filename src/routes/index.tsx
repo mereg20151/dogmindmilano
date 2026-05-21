@@ -176,14 +176,14 @@ function Header() {
                     <span>dogmindmilano@gmail.com</span>
                   </a>
                   <a
-                    href="https://instagram.com/dogmindmilano"
+                    href="https://www.instagram.com/dogmind_milano?igsh=MW1kZ2RqMzN3aXl5Mg%3D%3D&utm_source=qr"
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setOpen(false)}
                     className="flex items-center gap-3 text-foreground hover:text-accent transition-colors"
                   >
                     <Instagram className="h-4 w-4 text-accent" />
-                    <span>@dogmindmilano</span>
+                    <span>@dogmind_milano</span>
                   </a>
                   <div className="flex items-center gap-3 text-muted-foreground">
                     <MapPin className="h-4 w-4 text-accent" />
