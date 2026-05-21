@@ -258,7 +258,7 @@ function Target1() {
       <SectionHeader
         kicker="A chi è rivolto"
         title="Per chi è pensato il percorso"
-        sub="Educazione di base e gestione quotidiana — per chi vuole costruire un cane equilibrato nella vita reale di città."
+        sub="Educazione di base e gestione quotidiana, per chi vuole costruire un cane equilibrato nella vita reale di città."
       />
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border rounded-2xl overflow-hidden border border-border">
         {items.map(({ icon: Icon, title, desc }) => (
