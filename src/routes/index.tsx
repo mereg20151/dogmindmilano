@@ -486,7 +486,7 @@ function FinalCta() {
           </a>
         </div>
         <p className="mt-8 text-xs text-muted-foreground">
-          Nessun impegno
+          {"\n"}
         </p>
       </div>
     </section>
