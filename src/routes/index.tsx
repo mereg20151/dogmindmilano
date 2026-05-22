@@ -81,6 +81,7 @@ function Home() {
       <FinalCta />
       <Footer />
       <StickyMobileCta />
+      <CookieBanner />
     </div>
   );
 }
