@@ -13,6 +13,7 @@ import portraitImg from "@/assets/about-portrait.jpg";
 import action1 from "@/assets/action-1.jpg";
 import { MultiStepForm } from "@/components/MultiStepForm";
 import { StickyMobileCta } from "@/components/StickyMobileCta";
+import { CookieBanner } from "@/components/CookieBanner";
 import logoImg from "@/assets/logo-dog-mind-milano.png";
 
 export const Route = createFileRoute("/")({
