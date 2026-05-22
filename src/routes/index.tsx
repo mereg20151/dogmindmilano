@@ -13,6 +13,7 @@ import portraitImg from "@/assets/about-portrait.jpg";
 import action1 from "@/assets/action-1.jpg";
 import { MultiStepForm } from "@/components/MultiStepForm";
 import { StickyMobileCta } from "@/components/StickyMobileCta";
+import { CookieBanner } from "@/components/CookieBanner";
 import logoImg from "@/assets/logo-dog-mind-milano.png";
 
 export const Route = createFileRoute("/")({
@@ -80,6 +81,7 @@ function Home() {
       <FinalCta />
       <Footer />
       <StickyMobileCta />
+      <CookieBanner />
     </div>
   );
 }
@@ -579,8 +581,8 @@ function Footer() {
         <div>
           <div className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-4">Legale</div>
           <ul className="space-y-3 text-sm">
-            <li><Link to="/" className="text-muted-foreground hover:text-foreground">Privacy policy</Link></li>
-            <li><Link to="/" className="text-muted-foreground hover:text-foreground">Cookie policy</Link></li>
+            <li><Link to="/privacy" className="text-muted-foreground hover:text-foreground">Privacy policy</Link></li>
+            <li><Link to="/cookies" className="text-muted-foreground hover:text-foreground">Cookie policy</Link></li>
           </ul>
         </div>
       </div>
