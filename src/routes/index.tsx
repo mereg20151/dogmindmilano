@@ -420,15 +420,12 @@ function Pricing() {
               PRIMA VALUTAZIONE
             </div>
             <h3 className="font-display text-3xl mb-3">Prima valutazione</h3>
-            <p className="text-sm text-muted-foreground mb-3">
+            <p className="text-sm text-muted-foreground mb-10">
               Un incontro conoscitivo da 1 ora, costruito sulla tua situazione reale. Capiremo insieme il punto di partenza e il percorso più adatto al tuo cane.
             </p>
-            <p className="text-sm text-muted-foreground mb-8">
-              La prima valutazione è €60: un incontro per capire insieme dove partire. Se proseguiamo, riservo per te condizioni dedicate perché ogni cane merita un approccio personale, costruito passo dopo passo.
-            </p>
-            <div className="flex items-baseline gap-2 mb-10">
-              <span className="font-display text-7xl whitespace-pre-line">{`€60\n`}</span>
-              <span className="text-base text-muted-foreground whitespace-pre-line">{`/ora \n`}</span>
+            <div className="flex items-baseline gap-1 mb-10">
+              <span className="font-display text-7xl">€60</span>
+              <span className="text-2xl text-muted-foreground font-light">/ora</span>
             </div>
             <ul className="space-y-3 mb-10">
               {features.map((f) => (
