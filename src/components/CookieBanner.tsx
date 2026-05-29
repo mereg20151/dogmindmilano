@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "@tanstack/react-router";
-import { X } from "lucide-react";
+
 
 export function CookieBanner() {
   const [visible, setVisible] = useState(false);
