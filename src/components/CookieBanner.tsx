@@ -6,14 +6,19 @@ export function CookieBanner() {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    const accepted = localStorage.getItem("dogmind-cookies-accepted");
-    if (!accepted) {
+    const status = localStorage.getItem("dogmind-cookies-status");
+    if (!status) {
       setVisible(true);
     }
   }, []);
 
   const accept = () => {
-    localStorage.setItem("dogmind-cookies-accepted", "true");
+    localStorage.setItem("dogmind-cookies-status", "accepted");
+    setVisible(false);
+  };
+
+  const decline = () => {
+    localStorage.setItem("dogmind-cookies-status", "declined");
     setVisible(false);
   };
 
