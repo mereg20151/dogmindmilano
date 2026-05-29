@@ -364,7 +364,7 @@ function About() {
           <SectionHeader
             kicker="Chi sono"
             title="Sam Almasio"
-            sub={`Mi occupo di educazione cinofila aiutando le persone a costruire una relazione equilibrata, serena e consapevole con il proprio cane.\nCredo che ogni cane abbia caratteristiche uniche e che il percorso educativo debba rispettare i suoi tempi, le sue emozioni e i bisogni della famiglia.\n\nLavoro attraverso un approccio basato sulla comunicazione, sulla fiducia e sulla collaborazione, per migliorare la convivenza quotidiana e creare un legame autentico tra cane e proprietario.\n`}
+            sub={`Mi occupo di educazione cinofila aiutando le persone a costruire una relazione equilibrata, serena e consapevole con il proprio cane. Credo che ogni cane abbia caratteristiche uniche e che il percorso educativo debba rispettare i suoi tempi, le sue emozioni e i bisogni della famiglia.\n Lavoro attraverso un approccio basato sulla comunicazione, sulla fiducia e sulla collaborazione, per migliorare la convivenza quotidiana e creare un legame autentico tra cane e proprietario.\n`}
           />
         </div>
       </div>
