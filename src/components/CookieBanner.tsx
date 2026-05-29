@@ -46,11 +46,10 @@ export function CookieBanner() {
             Accetta
           </button>
           <button
-            onClick={accept}
-            className="p-2 text-muted-foreground hover:text-foreground transition-colors"
-            aria-label="Chiudi"
+            onClick={decline}
+            className="inline-flex items-center justify-center rounded-md border border-border bg-background px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-surface"
           >
-            <X className="h-4 w-4" />
+            Rifiuta
           </button>
         </div>
       </div>
