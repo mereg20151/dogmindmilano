@@ -362,8 +362,9 @@ function About() {
 
         <div className="lg:col-span-7">
           <SectionHeader
-            kicker=""
-            title={`\n`}
+            kicker="Chi sono"
+            title="Samuele Guzzardo"
+            sub="La prima valutazione è €60: un incontro per capire insieme dove partire. Se proseguiamo, riservo per te condizioni dedicate - perché ogni cane merita un approccio personale, costruito passo dopo passo. "
           />
         </div>
       </div>
