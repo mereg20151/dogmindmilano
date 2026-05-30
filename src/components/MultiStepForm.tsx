@@ -42,6 +42,38 @@ const difficoltaOpts = [
 
 const daQuantoOpts = ["Da poco", "Da qualche mese", "Da più di un anno"];
 
+const inputCls =
+  "w-full bg-transparent border-b border-border px-0 py-3 text-foreground placeholder:text-muted-foreground/60 focus:outline-none focus:border-accent transition-colors";
+
+const Field = ({ label, children }: { label: string; children: React.ReactNode }) => (
+  <label className="block">
+    <span className="block text-xs uppercase tracking-[0.18em] text-muted-foreground mb-2">{label}</span>
+    {children}
+  </label>
+);
+
+const Pill = ({
+  active,
+  onClick,
+  children,
+}: {
+  active: boolean;
+  onClick: () => void;
+  children: React.ReactNode;
+}) => (
+  <button
+    type="button"
+    onClick={onClick}
+    className={`px-4 py-2 rounded-md text-sm border transition-all ${
+      active
+        ? "border-accent bg-accent/15 text-foreground"
+        : "border-border hover:border-foreground/40 text-muted-foreground"
+    }`}
+  >
+    {children}
+  </button>
+);
+
 export function MultiStepForm() {
   const [step, setStep] = useState(0);
   const [data, setData] = useState<Data>(initial);
