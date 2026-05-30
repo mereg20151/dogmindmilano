@@ -75,10 +75,24 @@ export function MultiStepForm() {
     return false;
   };
 
-  const submit = (e: React.FormEvent) => {
+  const submit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!canNext()) return;
-    setSubmitted(true);
+    if (!canNext() || sending) return;
+    setErrorMsg(null);
+    setSending(true);
+    try {
+      const res = await fetch("/api/public/send-consultation", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+      if (!res.ok) throw new Error("send failed");
+      setSubmitted(true);
+    } catch {
+      setErrorMsg("Non è stato possibile inviare la richiesta. Riprova o contattaci direttamente.");
+    } finally {
+      setSending(false);
+    }
   };
 
   if (submitted) {
