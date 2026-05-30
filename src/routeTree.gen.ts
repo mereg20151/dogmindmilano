@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as CookiesRouteImport } from './routes/cookies'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as ApiPublicSendConsultationRouteImport } from './routes/api/public/send-consultation'
 
 const PrivacyRoute = PrivacyRouteImport.update({
   id: '/privacy',
@@ -28,35 +29,50 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ApiPublicSendConsultationRoute =
+  ApiPublicSendConsultationRouteImport.update({
+    id: '/api/public/send-consultation',
+    path: '/api/public/send-consultation',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/cookies': typeof CookiesRoute
   '/privacy': typeof PrivacyRoute
+  '/api/public/send-consultation': typeof ApiPublicSendConsultationRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/cookies': typeof CookiesRoute
   '/privacy': typeof PrivacyRoute
+  '/api/public/send-consultation': typeof ApiPublicSendConsultationRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/cookies': typeof CookiesRoute
   '/privacy': typeof PrivacyRoute
+  '/api/public/send-consultation': typeof ApiPublicSendConsultationRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/cookies' | '/privacy'
+  fullPaths: '/' | '/cookies' | '/privacy' | '/api/public/send-consultation'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/cookies' | '/privacy'
-  id: '__root__' | '/' | '/cookies' | '/privacy'
+  to: '/' | '/cookies' | '/privacy' | '/api/public/send-consultation'
+  id:
+    | '__root__'
+    | '/'
+    | '/cookies'
+    | '/privacy'
+    | '/api/public/send-consultation'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   CookiesRoute: typeof CookiesRoute
   PrivacyRoute: typeof PrivacyRoute
+  ApiPublicSendConsultationRoute: typeof ApiPublicSendConsultationRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -82,6 +98,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/api/public/send-consultation': {
+      id: '/api/public/send-consultation'
+      path: '/api/public/send-consultation'
+      fullPath: '/api/public/send-consultation'
+      preLoaderRoute: typeof ApiPublicSendConsultationRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -89,17 +112,8 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   CookiesRoute: CookiesRoute,
   PrivacyRoute: PrivacyRoute,
+  ApiPublicSendConsultationRoute: ApiPublicSendConsultationRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { startInstance } from './start.ts'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-    config: Awaited<ReturnType<typeof startInstance.getOptions>>
-  }
-}

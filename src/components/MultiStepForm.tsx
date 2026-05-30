@@ -46,6 +46,10 @@ export function MultiStepForm() {
   const [step, setStep] = useState(0);
   const [data, setData] = useState<Data>(initial);
   const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [errorMsg, setErrorMsg] = useState<string | null>(null);
+
+
 
   const totalSteps = 5;
   const progress = ((step + 1) / totalSteps) * 100;
@@ -71,10 +75,24 @@ export function MultiStepForm() {
     return false;
   };
 
-  const submit = (e: React.FormEvent) => {
+  const submit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!canNext()) return;
-    setSubmitted(true);
+    if (!canNext() || sending) return;
+    setErrorMsg(null);
+    setSending(true);
+    try {
+      const res = await fetch("/api/public/send-consultation", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+      if (!res.ok) throw new Error("send failed");
+      setSubmitted(true);
+    } catch {
+      setErrorMsg("Non è stato possibile inviare la richiesta. Riprova o contattaci direttamente.");
+    } finally {
+      setSending(false);
+    }
   };
 
   if (submitted) {
@@ -295,13 +313,16 @@ export function MultiStepForm() {
         ) : (
           <button
             type="submit"
-            disabled={!canNext()}
+            disabled={!canNext() || sending}
             className="inline-flex items-center gap-2 bg-accent text-accent-foreground px-6 py-3 rounded-md text-sm font-medium hover:bg-accent/90 transition-all disabled:opacity-40"
           >
-            Invia richiesta <Check className="h-4 w-4" />
+            {sending ? "Invio in corso…" : <>Invia richiesta <Check className="h-4 w-4" /></>}
           </button>
         )}
       </div>
+      {errorMsg && (
+        <p className="mt-4 text-sm text-destructive text-right">{errorMsg}</p>
+      )}
     </form>
   );
 }
