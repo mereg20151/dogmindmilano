@@ -313,13 +313,16 @@ export function MultiStepForm() {
         ) : (
           <button
             type="submit"
-            disabled={!canNext()}
+            disabled={!canNext() || sending}
             className="inline-flex items-center gap-2 bg-accent text-accent-foreground px-6 py-3 rounded-md text-sm font-medium hover:bg-accent/90 transition-all disabled:opacity-40"
           >
-            Invia richiesta <Check className="h-4 w-4" />
+            {sending ? "Invio in corso…" : <>Invia richiesta <Check className="h-4 w-4" /></>}
           </button>
         )}
       </div>
+      {errorMsg && (
+        <p className="mt-4 text-sm text-destructive text-right">{errorMsg}</p>
+      )}
     </form>
   );
 }
