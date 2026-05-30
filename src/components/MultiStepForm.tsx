@@ -46,6 +46,10 @@ export function MultiStepForm() {
   const [step, setStep] = useState(0);
   const [data, setData] = useState<Data>(initial);
   const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [errorMsg, setErrorMsg] = useState<string | null>(null);
+
+
 
   const totalSteps = 5;
   const progress = ((step + 1) / totalSteps) * 100;
