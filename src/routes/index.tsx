@@ -241,7 +241,7 @@ function Hero() {
           <span className="italic font-light text-accent">finalmente</span> sereno<br />
           in città.
         </h1>
-        <p className="reveal reveal-delay-2 max-w-xl text-lg md:text-2xl text-foreground/90 leading-relaxed font-light mb-10 mx-auto [text-shadow:0_1px_12px_rgba(0,0,0,0.3)]">
+        <p className="reveal reveal-delay-2 max-w-xl text-lg md:text-2xl text-white leading-relaxed font-light mb-10 mx-auto [text-shadow:0_1px_12px_rgba(0,0,0,0.3)]">
 
           Educazione di base e gestione quotidiana. Per chi vuole costruire un cane equilibrato nella vita reale di città.
         </p>
