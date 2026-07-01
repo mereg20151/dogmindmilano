@@ -99,7 +99,7 @@ function Header() {
             <span className="text-[9px] uppercase tracking-[0.25em] text-muted-foreground font-semibold mt-1">Milano</span>
           </div>
         </a>
-        <nav className="hidden lg:flex items-center gap-7 text-[10px] font-bold uppercase tracking-[0.25em] text-muted-foreground">
+        <nav className="hidden md:flex items-center gap-5 lg:gap-7 text-[9px] lg:text-[10px] font-bold uppercase tracking-[0.25em] text-muted-foreground">
           {nav.map((n) => (
             <a key={n.href} href={n.href} className="hover:text-accent transition-colors">
               {n.label}
