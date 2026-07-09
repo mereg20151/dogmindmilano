@@ -3,7 +3,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import {
   Dog, Baby, Building2, Link as LinkIcon, Target, Sparkles,
   Instagram, MessageCircle, Mail, MapPin, Star, ArrowRight, Check,
-  Menu, X,
+  Menu, X, ExternalLink,
 } from "lucide-react";
 import {
   Sheet, SheetTrigger, SheetContent, SheetClose,
@@ -11,7 +11,6 @@ import {
 import heroImg from "@/assets/hero-malinois.jpg";
 import portraitImg from "@/assets/about-portrait.jpg";
 import action1 from "@/assets/action-1.jpg";
-import { MultiStepForm } from "@/components/MultiStepForm";
 import { StickyMobileCta } from "@/components/StickyMobileCta";
 import { CookieBanner } from "@/components/CookieBanner";
 import logoImg from "@/assets/logo-dog-mind-milano.png";
