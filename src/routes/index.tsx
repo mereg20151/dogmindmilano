@@ -448,6 +448,8 @@ function Pricing() {
   );
 }
 
+const GOOGLE_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLScMMrMWSF3ipmSe-UBEg26nNX9UyVDiWwypk7Xw4SPIW7_WzQ/viewform?usp=header";
+
 function FormSection() {
   return (
     <section id="contatto" className="py-24 md:py-36 container-px max-w-4xl mx-auto">
@@ -476,7 +478,24 @@ function FormSection() {
           <Mail className="h-4 w-4 text-accent" /> Email
         </a>
       </div>
-      <MultiStepForm />
+      <div className="rounded-2xl border border-border bg-surface p-8 md:p-12 text-center">
+        <h3 className="font-display text-2xl md:text-3xl mb-3">Compila il questionario</h3>
+        <p className="text-muted-foreground max-w-lg mx-auto mb-8">
+          Ti biono un minuto. Le tue risposte mi aiutano a preparare un percorso su misura per te e il tuo cane.
+        </p>
+        <a
+          href={GOOGLE_FORM_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group inline-flex items-center justify-center gap-3 bg-primary text-primary-foreground px-8 py-4 rounded-full text-xs uppercase tracking-[0.2em] font-bold transition-all hover:-translate-y-0.5 hover:shadow-2xl hover:shadow-primary/30"
+        >
+          Apri il modulo
+          <ExternalLink className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+        </a>
+        <p className="mt-5 text-xs text-muted-foreground">
+          Si apre in una nuova scheda · Google Forms
+        </p>
+      </div>
     </section>
   );
 }
