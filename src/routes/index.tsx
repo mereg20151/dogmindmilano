@@ -481,7 +481,7 @@ function FormSection() {
       <div className="rounded-2xl border border-border bg-surface p-8 md:p-12 text-center">
         <h3 className="font-display text-2xl md:text-3xl mb-3">Compila il questionario</h3>
         <p className="text-muted-foreground max-w-lg mx-auto mb-8">
-          Ti biono un minuto. Le tue risposte mi aiutano a preparare un percorso su misura per te e il tuo cane.
+          Ti basta un minuto. Le tue risposte mi aiutano a preparare un percorso su misura per te e il tuo cane.
         </p>
         <a
           href={GOOGLE_FORM_URL}
