@@ -18,11 +18,11 @@ import logoImg from "@/assets/logo-dog-mind-milano.png";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Dog Mind Milano · Educatore cinofilo a Milano | Sessioni 1:1" },
+      { title: "Dog Mind Milano · Educatore cinofilo a Milano" },
       { name: "description", content: "Educatore cinofilo a Milano. Sessioni private a domicilio per cuccioli, cani giovani e gestione urbana. Metodo basato sulla relazione. Prima consulenza in 48h." },
       { name: "keywords", content: "educatore cinofilo Milano, addestramento cani Milano, educazione cuccioli Milano, gestione urbana cane, ENCI" },
-      { property: "og:title", content: "Dog Mind Milano — Educazione cinofila moderna" },
-      { property: "og:description", content: "Sessioni private 1:1 a Milano per costruire un cane equilibrato nella vita di tutti i giorni." },
+      { property: "og:title", content: "Dog Mind Milano · Educatore cinofilo a Milano" },
+      { property: "og:description", content: "Educatore cinofilo a Milano. Sessioni private a domicilio per cuccioli, cani giovani e gestione urbana. Metodo basato sulla relazione. Prima consulenza in 48h." },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://dogmindmilano.lovable.app/" },
       { property: "og:image", content: "https://dogmindmilano.lovable.app/logo-dog-mind-milano.png" },
