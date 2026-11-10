@@ -274,7 +274,7 @@ function Hero() {
           </div>
           <div>
             <div className="font-display text-3xl text-foreground">ENCI</div>
-            <div className="text-[10px] uppercase tracking-[0.18em] text-muted-foreground mt-1">Percorso in corso</div>
+            <div className="text-[10px] uppercase tracking-[0.18em] text-muted-foreground mt-1">Istruttore diplomato</div>
           </div>
         </div>
       </div>
@@ -581,7 +581,7 @@ function Footer() {
           <div className="flex items-center gap-3 mb-3">
             <img src={logoImg} alt="Dog Mind Milano" className="h-12 w-auto" />
           </div>
-          <p className="text-sm text-muted-foreground">Educatore cinofilo in formazione · Percorso ENCI.</p>
+          <p className="text-sm text-muted-foreground">Istruttore cinofilo ENCI · Diploma conseguito.</p>
           <div className="flex items-center gap-2 text-sm text-muted-foreground mt-4">
             <MapPin className="h-4 w-4" /> Milano, Italia
           </div>
